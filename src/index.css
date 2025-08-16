@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-primary-text: var(--primary-text);
+  --color-secondary-text: var(--secondary-text);
+  --color-accent: var(--accent);
+  --color-svg: var(--svg);
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --background-secondary: #dbdbdb;
+    --primary-text: #070707;
+    --secondary-text: #ffffff;
+    --accent: #1736ff;
+    --svg: #a1adff;
+  }
+
+  .dark {
+    --background: #1d1d1f;
+    --background-secondary: #3f3f3f;
+    --primary-text: #ffffff;
+    --secondary-text: #1d1d1f;
+    --accent: #ffc117;
+    --svg: #48321e;
+  }
+}
+
+* {
+  @apply box-border scroll-smooth;
+}
+
+html {
+  @apply scroll-smooth bg-background transition-colors duration-300 ease-in-out;
+}
+
+@utility toggle {
+  @apply flex justify-center w-[55%] rounded-full bg-background p-1 transition-transform duration-300 ease-in-out;
+}
+
+@utility cta-button {
+  @apply bg-accent text-secondary-text font-semibold rounded-lg px-4 py-2;
+}
+
+@utility card {
+  @apply bg-background-secondary text-primary-text rounded-lg shadow-md p-4;
+}
