@@ -1,5 +1,31 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter_28pt-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./assets/fonts/Raleway.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-regular";
+  src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Poppins-bold";
+  src: url("../src/assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-medium";
+  src: url("../src/assets/fonts/Poppins-Medium.ttf") format("truetype");
+}
+
 @theme {
   --color-background: var(--background);
   --color-background-secondary: var(--background-secondary);
@@ -14,6 +40,7 @@
     --background: #ffffff;
     --background-secondary: #dbdbdb;
     --primary-text: #070707;
+    --outline: #070707;
     --secondary-text: #ffffff;
     --accent: #1736ff;
     --svg: #a1adff;
@@ -24,9 +51,37 @@
     --background-secondary: #3f3f3f;
     --primary-text: #ffffff;
     --secondary-text: #1d1d1f;
+    --outline: #1d1d1f;
     --accent: #ffc117;
     --svg: #48321e;
   }
+}
+
+@utility scrollbarStyle {
+  /* Firefox (applies to the element itself) */
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+
+  /* WebKit-based browsers (scoped to the element with this class) */
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 9999px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+:root {
+  width: 100%;
+  height: 100%;
 }
 
 * {
@@ -34,7 +89,7 @@
 }
 
 html {
-  @apply scroll-smooth bg-background transition-colors duration-300 ease-in-out;
+  @apply scrollbarStyle scroll-smooth bg-background transition-colors duration-300 ease-in-out;
 }
 
 @utility toggle {
@@ -47,4 +102,26 @@ html {
 
 @utility card {
   @apply bg-background-secondary text-primary-text rounded-lg shadow-md p-4;
+}
+
+@utility fonthero {
+  font-family: "raleway", sans-serif;
+}
+
+@utility fontheading {
+  font-family: "Inter", sans-serif;
+}
+
+@utility fontbody {
+  font-family: "Poppins-regular", sans-serif;
+  @apply leading-8 text-[1.3rem] tracking-[0.4pt];
+}
+
+@utility text-outline {
+  -webkit-text-stroke: 2px var(--outline);
+}
+
+@utility navlink {
+  font-family: "Poppins-regular", sans-serif;
+  @apply flex flex-shrink-0 justify-center  items-center py-[0.5vw] w-[8vw] rounded-[100vw];
 }
