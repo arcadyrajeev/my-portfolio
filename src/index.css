@@ -27,33 +27,44 @@
 }
 
 @theme {
-  --color-background: var(--background);
+  --color-background-primary: var(--background-primary);
   --color-background-secondary: var(--background-secondary);
   --color-primary-text: var(--primary-text);
   --color-secondary-text: var(--secondary-text);
   --color-accent: var(--accent);
   --color-svg: var(--svg);
+  --color-gradient: var(--gradient);
 }
 
 @layer base {
   :root {
-    --background: #ffffff;
+    --background-primary: #ffffff;
     --background-secondary: #dbdbdb;
     --primary-text: #070707;
     --outline: #070707;
     --secondary-text: #ffffff;
     --accent: #1736ff;
     --svg: #a1adff;
+    --gradient: #e4f9ff8a;
   }
 
   .dark {
-    --background: #1d1d1f;
+    --background-primary: #1d1d1f;
     --background-secondary: #3f3f3f;
     --primary-text: #ffffff;
     --secondary-text: #1d1d1f;
     --outline: #1d1d1f;
     --accent: #ffc117;
     --svg: #48321e;
+    --gradient: #ffe6b0e0;
+  }
+}
+
+@layer base {
+  html,
+  body,
+  :root {
+    background: transparent !important;
   }
 }
 
@@ -79,49 +90,84 @@
   }
 }
 
-:root {
-  width: 100%;
-  height: 100%;
-}
-
-* {
-  @apply box-border scroll-smooth;
-}
-
+*,
 html {
-  @apply scrollbarStyle scroll-smooth bg-background transition-colors duration-300 ease-in-out;
+  @apply scrollbarStyle;
 }
 
-@utility toggle {
-  @apply flex justify-center w-[55%] rounded-full bg-background p-1 transition-transform duration-300 ease-in-out;
+.toggle {
+  @apply flex justify-center w-[55%] rounded-full bg-background-primary p-1 transition-transform duration-300 ease-in-out;
 }
 
-@utility cta-button {
+.cta-button {
   @apply bg-accent text-secondary-text font-semibold rounded-lg px-4 py-2;
 }
 
-@utility card {
+.card {
   @apply bg-background-secondary text-primary-text rounded-lg shadow-md p-4;
 }
 
-@utility fonthero {
+.fonthero {
   font-family: "raleway", sans-serif;
 }
 
-@utility fontheading {
+.fontheading {
   font-family: "Inter", sans-serif;
 }
 
-@utility fontbody {
+.fontbody {
   font-family: "Poppins-regular", sans-serif;
   @apply leading-8 text-[1.3rem] tracking-[0.4pt];
 }
 
-@utility text-outline {
+.text-outline {
   -webkit-text-stroke: 2px var(--outline);
 }
 
-@utility navlink {
+.navlink {
   font-family: "Poppins-regular", sans-serif;
-  @apply flex flex-shrink-0 justify-center  items-center py-[0.5vw] w-[8vw] rounded-[100vw];
+  @apply flex flex-shrink-0 justify-center items-center py-[0.5vw] w-[9vw] rounded-[100vw];
+}
+
+.blob-1 {
+  width: 30vw;
+  height: 30vw;
+  left: 30%;
+  top: 40%;
+  position: absolute;
+
+  background: radial-gradient(
+    circle closest-side,
+    rgba(126, 138, 250, 0.39),
+    rgba(253, 253, 253, 0)
+  );
+}
+
+.blob-2 {
+  width: 40vw;
+  height: 40vw;
+  right: 5%;
+  top: 5%;
+  position: absolute;
+
+  background: radial-gradient(
+    circle closest-side,
+    rgba(253, 157, 67, 0.445),
+    rgba(221, 221, 221, 0)
+  );
+}
+
+.buttonShine {
+  display: flex;
+  position: absolute;
+  border-radius: 4vw;
+  width: 15rem;
+  height: 7.5rem;
+  background: linear-gradient(140deg, var(--gradient), #07070700);
+  top: 0;
+  left: 50%;
+  z-index: 0;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

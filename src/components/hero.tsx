@@ -16,16 +16,23 @@ const Hero = () => {
   });
 
   // Parallax effect: as you scroll, image moves slower than text
-  const y1 = useTransform(scrollYProgress, [0, 1], ["0%", "120%"]);
+  const y1 = useTransform(scrollYProgress, [0, 1], ["0%", "140%"]);
   const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "250%"]);
   const y3 = useTransform(scrollYProgress, [0, 1], ["0%", "70%"]);
 
   return (
     <div
       ref={ref}
-      className="relative flex flex-col w-full h-[250dvh] gap-10 pb-10 bg-background overflow-hidden"
+      className="relative flex flex-col w-full h-[250dvh] gap-10 pb-10 bg-background-primary overflow-hidden"
       id="hero"
     >
+      <motion.div
+        style={{ y: y1 }}
+        className="flex top-0 absolute z-0 w-full h-[100dvh] justify-end"
+      >
+        <div className="blob-1 "></div>
+        <div className="blob-2 "></div>
+      </motion.div>
       <div className="flex relative w-full h-[40%]">
         {/* Text content */}
         <motion.div
@@ -41,12 +48,16 @@ const Hero = () => {
         </motion.div>
 
         {/* Parallax image */}
-        <motion.img
-          src="./imagerkd.png"
+        <motion.div
           style={{ y: y1 }}
-          className="h-[120vh] w-auto z-5 absolute right-[8%] bottom-0"
-          alt="Rajeev Das"
-        />
+          className="flex top-0 absolute z-5 w-full h-[100dvh] justify-end"
+        >
+          <img
+            src="./imagerkd2.png"
+            className="relative h-[100vh] z-6 w-auto object-cover mr-20"
+            alt="Rajeev Das"
+          />
+        </motion.div>
 
         {/* Outlined duplicate text (overlay) */}
         <motion.div

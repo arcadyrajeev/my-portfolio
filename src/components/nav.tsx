@@ -1,5 +1,5 @@
 import { Moon, Sun } from "lucide-react";
-import { useState, useMemo } from "react";
+import { useMemo } from "react";
 import { useLocation, NavLink } from "react-router-dom";
 import { useTheme } from "../contexts/themeContext";
 
@@ -28,8 +28,6 @@ const Navbar = () => {
   const { isDarkMode, toggleTheme } = useTheme();
   const { pathname } = useLocation();
 
-  const [open, setOpen] = useState(false);
-
   // derive the current item from the URL (robust to refresh/back/forward)
   const current =
     (navItems.find((i) => i.path === pathname)?.name as Item["name"]) ?? "Home";
@@ -45,10 +43,10 @@ const Navbar = () => {
         id="logo"
       />
       <nav
-        className="flex w-[8vw] overflow-hidden justify-center 
+        className="flex w-[9vw] overflow-hidden justify-center 
              bg-primary-text text-[1rem] rounded-[100vw] 
              transition-all
-             duration-300 ease-in-out fontbody hover:w-[24vw]"
+             duration-300 ease-in-out fontbody hover:w-[27vw]"
       >
         {ordered.map((item) => (
           <NavLink
