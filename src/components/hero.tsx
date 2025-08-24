@@ -75,23 +75,41 @@ const Hero = () => {
       <motion.div
         style={{ y: y3 }}
         className="relative z-30 w-[94%] h-[40%]  mt-30 mx-auto 
-                      backdrop-blur-md bg-white/5 
+                      backdrop-blur-lg bg-white/5 
                       border border-primary-text/30 rounded-[2rem] py-10 px-20"
       >
-        <h1 className="fontheading text-[5rem] text-primary-text text-right">
+        <h1 className="fontheading text-[6.6rem] text-primary-text text-right">
           About Me
         </h1>
-        <div className="flex flex-col gap-10 w-[50%] py-10 h-full  mt-4">
-          <p className="text-primary-text fontbody text-[1.28rem] text-justify">
+        <div className="grid grid-cols-3  gap-10 w-full py-10 h-full  ">
+          <div className="px-12">
+            <p className="fontheading text-[6rem] font-bold text-primary-text/70">
+              2+
+            </p>
+            <p className="text-primary-text fontbody ">
+              years of Web design and development experience
+            </p>
+          </div>
+          <div className="px-12">
+            <p className="fontheading text-[6rem] font-bold text-primary-text/70">
+              5+
+            </p>
+            <p className="text-primary-text fontbody ">
+              years of coding and programming experience{" "}
+            </p>
+          </div>
+          <p className="text-primary-text fontbody text-[1rem]  px-12 leading-8 col-span-2 ">
             I am a web developer and tech enthusiast with over 2 years of
             professional experience in web development and more than 5 years of
             coding expertise.
           </p>
-          <p className="text-primary-text fontbody text-[1.28rem] text-justify">
-            My journey in tech began back in 9th grade with C++, grew through
-            Python in high school, and today thrives in full-stack JavaScript.
-            I’m passionate about crafting modern, user-friendly websites and
-            applications that turn ideas into effortless digital experiences.
+
+          <p className=" px-5 text-primary-text fontbody text-[1rem] leading-10 text-justify row-start-1 row-end-4 col-start-3">
+            My journey in tech began back in 9th grade with a little curiosity
+            and C++, grew through Python in high school, and today thrives in
+            full-stack JavaScript. I’m passionate about crafting modern,
+            user-friendly websites and applications that turn ideas into
+            effortless digital experiences.
           </p>
         </div>
       </motion.div>

@@ -34,6 +34,7 @@
   --color-accent: var(--accent);
   --color-svg: var(--svg);
   --color-gradient: var(--gradient);
+  --color-toggle: var(--toggle);
 }
 
 @layer base {
@@ -46,6 +47,7 @@
     --accent: #1736ff;
     --svg: #a1adff;
     --gradient: #89e5ffaf;
+    --toggle: #b8b8b8;
     --blob1: #8696ff98;
     --blob2: #ffd382a2;
     --blob3: #ff928a80;
@@ -53,13 +55,14 @@
 
   .dark {
     --background-primary: #1d1d1f;
-    --background-secondary: #3f3f3f;
+    --background-secondary: #272727;
     --primary-text: #ffffff;
     --secondary-text: #1d1d1f;
     --outline: #1d1d1f;
     --accent: #ffc117;
-    --svg: #48321e;
+    --svg: #ffa22967;
     --gradient: #ffe6b0e0;
+    --toggle: #6b6b6b;
     --blob1: #435cff4f;
     --blob2: #ff9b3d75;
     --blob3: #ff514563;
@@ -124,7 +127,6 @@ html {
 
 .fontbody {
   font-family: "Poppins-regular", sans-serif;
-  @apply leading-8 text-[1.3rem] tracking-[0.4pt];
 }
 
 .fontCta {

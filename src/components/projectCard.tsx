@@ -19,14 +19,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className={`${orientation} flex w-full`}>
-      <div className="relative flex  w-[50%] h-[64dvh]  px-10 py-5">
-        <div className="absolute flex bottom-[-5%] bg-accent rotate-[8deg] w-[80%] h-[24vw] rounded-[2rem]"></div>
+      <div className="group relative flex  w-[50%] h-[64dvh]  px-10 py-5">
+        <div className="absolute flex bottom-[-5%] bg-accent rotate-[8deg] w-[80%] h-[24vw] rounded-[1.2rem]"></div>
         <NavLink
           to={liveSite}
-          target="blank"
-          className=" relative overflow-hidden flex bg-background-primary w-full rounded-[2rem]"
+          target="_blank"
+          className="relative flex overflow-hidden bg-background-primary justify-start w-full rounded-[1rem]"
         >
-          <img src={imgLink} className="w-[100%] h-[100%] object-cover" />
+          <img
+            src={imgLink}
+            alt="project preview"
+            className="absolute top-0 object-top-left w-full h-full object-cover group-hover:scale-[1.04] transition-scale duration-300 ease-out"
+          />
         </NavLink>
       </div>
       <div className="flex flex-col w-[50%] p-10 pl-20">
