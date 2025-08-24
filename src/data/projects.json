@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Academy X",
+    "imgLink": "/images/academyX.jpeg",
+    "desc": [
+      "Website for a Photography Service",
+      "Mobile First Design",
+      "Image optimization for fast loading",
+      "Smooth animations"
+    ],
+    "liveSite": "https://academy-x-seven.vercel.app/",
+    "orientation": "flex-row"
+  },
+  {
+    "title": "Lunaria Photography",
+    "imgLink": "/images/Lunaria.jpeg",
+    "desc": [
+      "Website for a Photography Service",
+      "Mobile First Design",
+      "Image optimization for fast loading",
+      "Smooth animations"
+    ],
+    "liveSite": "https://lunaria.arcadydesign.com/",
+    "orientation": "flex-row-reverse"
+  },
+  {
+    "title": "Hart Legal",
+    "imgLink": "/images/Lunaria.jpeg",
+    "desc": [
+      "Website for a Photography Service",
+      "Mobile First Design",
+      "Image optimization for fast loading",
+      "Smooth animations"
+    ],
+    "liveSite": "https://lunaria.arcadydesign.com/",
+    "orientation": "flex-row"
+  },
+  {
+    "title": "Ellanore Joaillerie",
+    "imgLink": "/images/Lunaria.jpeg",
+    "desc": [
+      "Website for a Photography Service",
+      "Mobile First Design",
+      "Image optimization for fast loading",
+      "Smooth animations"
+    ],
+    "liveSite": "https://lunaria.arcadydesign.com/",
+    "orientation": "flex-row-reverse"
+  }
+]

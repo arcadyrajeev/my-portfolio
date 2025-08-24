@@ -6,11 +6,6 @@
 }
 
 @font-face {
-  font-family: "Raleway";
-  src: url("./assets/fonts/Raleway.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Poppins-regular";
   src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: 200;
@@ -22,8 +17,13 @@
 }
 
 @font-face {
-  font-family: "Poppins-medium";
-  src: url("../src/assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-family: "Poppins-light";
+  src: url("../src/assets/fonts/Poppins-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../src/assets/fonts/Manrope-Regular.ttf") format("truetype");
 }
 
 @theme {
@@ -39,13 +39,16 @@
 @layer base {
   :root {
     --background-primary: #ffffff;
-    --background-secondary: #dbdbdb;
+    --background-secondary: #f0f0f0;
     --primary-text: #070707;
     --outline: #070707;
     --secondary-text: #ffffff;
     --accent: #1736ff;
     --svg: #a1adff;
-    --gradient: #e4f9ff8a;
+    --gradient: #89e5ffaf;
+    --blob1: #8696ff98;
+    --blob2: #ffd382a2;
+    --blob3: #ff928a80;
   }
 
   .dark {
@@ -57,6 +60,9 @@
     --accent: #ffc117;
     --svg: #48321e;
     --gradient: #ffe6b0e0;
+    --blob1: #435cff4f;
+    --blob2: #ff9b3d75;
+    --blob3: #ff514563;
   }
 }
 
@@ -96,7 +102,7 @@ html {
 }
 
 .toggle {
-  @apply flex justify-center w-[55%] rounded-full bg-background-primary p-1 transition-transform duration-300 ease-in-out;
+  @apply flex justify-center w-[55%] border border-black/30 rounded-full bg-background-primary p-1 transition-transform duration-300 ease-in-out;
 }
 
 .cta-button {
@@ -108,16 +114,21 @@ html {
 }
 
 .fonthero {
-  font-family: "raleway", sans-serif;
+  font-family: "Poppins-regular";
+  font-weight: 200;
 }
 
 .fontheading {
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .fontbody {
   font-family: "Poppins-regular", sans-serif;
   @apply leading-8 text-[1.3rem] tracking-[0.4pt];
+}
+
+.fontCta {
+  font-family: "Poppins-light", sans-serif;
 }
 
 .text-outline {
@@ -138,7 +149,7 @@ html {
 
   background: radial-gradient(
     circle closest-side,
-    rgba(126, 138, 250, 0.39),
+    var(--blob1),
     rgba(253, 253, 253, 0)
   );
 }
@@ -152,7 +163,21 @@ html {
 
   background: radial-gradient(
     circle closest-side,
-    rgba(253, 157, 67, 0.445),
+    var(--blob2),
+    rgba(221, 221, 221, 0)
+  );
+}
+
+.blob-3 {
+  width: 40vw;
+  height: 40vw;
+  left: 15%;
+  top: 10%;
+  position: absolute;
+
+  background: radial-gradient(
+    circle closest-side,
+    var(--blob3),
     rgba(221, 221, 221, 0)
   );
 }
@@ -160,11 +185,11 @@ html {
 .buttonShine {
   display: flex;
   position: absolute;
-  border-radius: 4vw;
+  border-radius: 6vw;
   width: 15rem;
   height: 7.5rem;
-  background: linear-gradient(140deg, var(--gradient), #07070700);
-  top: 0;
+  background: linear-gradient(180deg, var(--gradient), #07070700);
+  top: -10%;
   left: 50%;
   z-index: 0;
   transition-property: all;

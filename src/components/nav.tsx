@@ -35,13 +35,15 @@ const Navbar = () => {
   const ordered = useMemo(() => centerOrdered(navItems, current), [current]);
 
   return (
-    <div className="absolute z-99 w-full h[4vw] flex items-center justify-between px-[4vw] py-[2vw] transition-[colors, transform] duration-300 ease-in-out">
-      <img
-        src={isDarkMode ? "/logo-white.svg" : "/logo-black.svg"}
-        alt="Logo"
-        className="w-12 h-12"
-        id="logo"
-      />
+    <div className="absolute fixed z-99 w-full h[4vw] flex items-center justify-between px-[4vw] py-[2vw] transition-[colors, transform] duration-300 ease-in-out">
+      <NavLink to={"/"}>
+        <img
+          src={isDarkMode ? "/logo-white.svg" : "/logo-black.svg"}
+          alt="Logo"
+          className="w-12 h-12"
+          id="logo"
+        />
+      </NavLink>
       <nav
         className="flex w-[9vw] overflow-hidden justify-center 
              bg-primary-text text-[1rem] rounded-[100vw] 

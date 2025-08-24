@@ -1,16 +1,11 @@
 import ProjectCard from "./projectCard";
 
-const ProjectSection = () => {
-  const descList: string[] = [
-    "Website for a Photography Service",
-    "Mobile First Design",
-    "Image optimization for fast loading",
-    "Smooth animations",
-  ];
+import projectData from "../data/projects.json";
 
+const ProjectSection = () => {
   return (
     <div className="flex bg-transparent relative  w-full">
-      <div className="flex flex-col gap-20 w-full  relative fontheading bg-background-secondary z-50 p-10 pb-60">
+      <div className="flex flex-col gap-25 w-full  relative fontheading bg-background-secondary z-50 p-10 pb-60">
         <div className="flex w-full gap-[8vw] mt-15">
           <h1 className="flex  text-[6rem] h-fit text-primary-text">
             Featured Projects{" "}
@@ -19,12 +14,17 @@ const ProjectSection = () => {
             A CURATED SELECTION OF MY MOST PASSIONATELY CRAFTED PROJECTS{" "}
           </p>
         </div>
-        <ProjectCard
-          imgLink="/"
-          title="Lunaria Photography"
-          desc={descList}
-          liveSite="/"
-        ></ProjectCard>
+        <div className="flex flex-col gap-50">
+          {projectData.map((project) => (
+            <ProjectCard
+              imgLink={project.imgLink}
+              title={project.title}
+              desc={project.desc}
+              liveSite={project.liveSite}
+              orientation={project.orientation}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

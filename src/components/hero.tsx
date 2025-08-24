@@ -15,10 +15,9 @@ const Hero = () => {
     console.log(`scroll progress ${latest}`);
   });
 
-  // Parallax effect: as you scroll, image moves slower than text
-  const y1 = useTransform(scrollYProgress, [0, 1], ["0%", "140%"]);
-  const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "250%"]);
-  const y3 = useTransform(scrollYProgress, [0, 1], ["0%", "70%"]);
+  const y1 = useTransform(scrollYProgress, [0, 1], ["0%", "400%"]);
+  const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "760%"]);
+  const y3 = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
     <div
@@ -32,6 +31,7 @@ const Hero = () => {
       >
         <div className="blob-1 "></div>
         <div className="blob-2 "></div>
+        <div className="blob-3 "></div>
       </motion.div>
       <div className="flex relative w-full h-[40%]">
         {/* Text content */}
@@ -53,7 +53,7 @@ const Hero = () => {
           className="flex top-0 absolute z-5 w-full h-[100dvh] justify-end"
         >
           <img
-            src="./imagerkd2.png"
+            src="./imagerkd2.webp"
             className="relative h-[100vh] z-6 w-auto object-cover mr-20"
             alt="Rajeev Das"
           />
@@ -74,7 +74,7 @@ const Hero = () => {
       </div>
       <motion.div
         style={{ y: y3 }}
-        className="relative z-30 w-[94%] h-[40%]  mx-auto 
+        className="relative z-30 w-[94%] h-[40%]  mt-30 mx-auto 
                       backdrop-blur-md bg-white/5 
                       border border-primary-text/30 rounded-[2rem] py-10 px-20"
       >
