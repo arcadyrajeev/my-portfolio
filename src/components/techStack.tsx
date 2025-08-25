@@ -11,7 +11,7 @@ const TechStack = () => {
         <h1 className="fontheading text-[8rem] text-primary-text">
           Tech Stack
         </h1>
-        <p className="fontbody text-[1.2rem] py-20 w-[32vw] pl-60 text-primary-text/80">
+        <p className="fontbody text-[1rem] tracking-wider py-24 w-[36vw] pl-56 text-primary-text/80">
           Tools I use to design, build and deploy amazing things
         </p>
       </div>
