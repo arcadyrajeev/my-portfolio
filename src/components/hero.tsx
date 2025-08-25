@@ -20,7 +20,7 @@ const Hero = () => {
 
   const y1 = useTransform(scrollYProgress, [0, 1], ["0%", "560%"]);
   const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "900%"]);
-  const y3 = useTransform(scrollYProgress, [0, 1], ["0%", "160%"]);
+  const y3 = useTransform(scrollYProgress, [0, 1], ["0%", "125%"]);
 
   return (
     <div
