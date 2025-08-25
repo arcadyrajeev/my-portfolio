@@ -15,7 +15,9 @@ const TechCard: React.FC<TechProps> = ({ title, iconList }) => {
         {iconList.map((icon) => (
           <div className="flex flex-col gap-4 items-center w-24 h-32 p-4">
             <img src={icon.iconLink} />
-            <p className="text-primary-text fontbody">{icon.text}</p>
+            <p className="text-primary-text text-center fontbody">
+              {icon.text}
+            </p>
           </div>
         ))}
       </div>
