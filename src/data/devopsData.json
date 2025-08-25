@@ -1,0 +1,43 @@
+[
+  {
+    "iconLink": "/icons/git.png",
+    "text": "Git"
+  },
+  {
+    "iconLink": "/icons/github.png",
+    "text": "Github"
+  },
+  {
+    "iconLink": "/icons/jenkins.png",
+    "text": "Jenkins"
+  },
+  {
+    "iconLink": "/icons/postman.png",
+    "text": "PostmanAPI"
+  },
+  {
+    "iconLink": "/icons/docker.png",
+    "text": "Docker"
+  },
+
+  {
+    "iconLink": "/icons/mongoose.png",
+    "text": "Mongoose"
+  },
+  {
+    "iconLink": "/icons/supabase.png",
+    "text": "Supabase"
+  },
+  {
+    "iconLink": "/icons/vercel.png",
+    "text": "Vercel"
+  },
+  {
+    "iconLink": "/icons/vscode.png",
+    "text": "VScode"
+  },
+  {
+    "iconLink": "/icons/figma.png",
+    "text": "Figma"
+  }
+]

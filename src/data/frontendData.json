@@ -1,0 +1,42 @@
+[
+  {
+    "iconLink": "/icons/NExt.png",
+    "text": "Next.js"
+  },
+  {
+    "iconLink": "/icons/react.png",
+    "text": "React.js"
+  },
+  {
+    "iconLink": "/icons/css.png",
+    "text": "CSS3"
+  },
+  {
+    "iconLink": "/icons/html.png",
+    "text": "HTML5"
+  },
+  {
+    "iconLink": "/icons/js.png",
+    "text": "JavaScript(ES6)"
+  },
+  {
+    "iconLink": "/icons/ts.png",
+    "text": "Typescript"
+  },
+  {
+    "iconLink": "/icons/sass.png",
+    "text": "SCSS"
+  },
+  {
+    "iconLink": "/icons/Tailwind.png",
+    "text": "Tailwind"
+  },
+  {
+    "iconLink": "/icons/zust.png",
+    "text": "Zustand"
+  },
+  {
+    "iconLink": "/icons/redux.png",
+    "text": "Redux"
+  }
+]

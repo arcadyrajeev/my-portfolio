@@ -1,0 +1,42 @@
+[
+  {
+    "iconLink": "/icons/node.png",
+    "text": "Node js"
+  },
+  {
+    "iconLink": "/icons/express.png",
+    "text": "Express.js"
+  },
+  {
+    "iconLink": "/icons/rest.png",
+    "text": "REST API"
+  },
+  {
+    "iconLink": "/icons/postgresql.png",
+    "text": "PostgreSQL"
+  },
+  {
+    "iconLink": "/icons/mongo.png",
+    "text": "MongoDB"
+  },
+  {
+    "iconLink": "/icons/prisma.png",
+    "text": "PrismaORM"
+  },
+  {
+    "iconLink": "/icons/graphql.png",
+    "text": "GraphQL"
+  },
+  {
+    "iconLink": "/icons/redis.png",
+    "text": "Redis"
+  },
+  {
+    "iconLink": "/icons/kafka.png",
+    "text": "Kafka"
+  },
+  {
+    "iconLink": "/icons/socket.png",
+    "text": "Socket.io"
+  }
+]

@@ -15,14 +15,14 @@ const Hero = () => {
     console.log(`scroll progress ${latest}`);
   });
 
-  const y1 = useTransform(scrollYProgress, [0, 1], ["0%", "400%"]);
-  const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "760%"]);
-  const y3 = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const y1 = useTransform(scrollYProgress, [0, 1], ["0%", "440%"]);
+  const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "800%"]);
+  const y3 = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
 
   return (
     <div
       ref={ref}
-      className="relative flex flex-col w-full h-[250dvh] gap-10 pb-10 bg-background-primary overflow-hidden"
+      className="relative flex flex-col w-full h-[230dvh] gap-10 pb-10 bg-background-primary overflow-hidden"
       id="hero"
     >
       <motion.div
@@ -74,7 +74,7 @@ const Hero = () => {
       </div>
       <motion.div
         style={{ y: y3 }}
-        className="relative z-30 w-[94%] h-[40%]  mt-30 mx-auto 
+        className="relative z-30 w-[94%] h-[40%]  mt-20 mx-auto 
                       backdrop-blur-lg bg-white/5 
                       border border-primary-text/30 rounded-[2rem] py-10 px-20"
       >

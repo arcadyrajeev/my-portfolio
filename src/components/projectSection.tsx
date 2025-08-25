@@ -21,8 +21,8 @@ const ProjectSection = () => {
           <h1 className="flex  text-[6rem] h-fit text-primary-text">
             Featured Projects{" "}
           </h1>
-          <p className="flex h-fit mt-20 fontBody w-[24vw] tracking-wider text-primary-text/70">
-            A CURATED SELECTION OF MY MOST PASSIONATELY CRAFTED PROJECTS{" "}
+          <p className="flex h-fit mt-16 fontbody text-[1rem] w-[24vw] tracking-wider text-primary-text/90">
+            A curated selection of my most passionately crafted projects{" "}
           </p>
         </div>
         <div className="flex flex-col gap-50 z-2">
