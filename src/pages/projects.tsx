@@ -1,3 +1,4 @@
+import Footer from "../components/footer";
 import Navbar from "../components/nav";
 import ProjectSection from "../components/projectSection";
 
@@ -7,7 +8,7 @@ const Projects = () => {
       <Navbar />
       <ProjectSection />
       <ProjectSection />
-      <ProjectSection />
+      <Footer />
     </div>
   );
 };
