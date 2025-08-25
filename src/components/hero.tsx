@@ -7,6 +7,9 @@ import {
 } from "framer-motion";
 import { useRef } from "react";
 
+import CtaButtonSecond from "./ctaButtonSecond";
+import { NavLink } from "react-router-dom";
+
 const Hero = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll();
@@ -15,14 +18,14 @@ const Hero = () => {
     console.log(`scroll progress ${latest}`);
   });
 
-  const y1 = useTransform(scrollYProgress, [0, 1], ["0%", "440%"]);
-  const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "800%"]);
-  const y3 = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
+  const y1 = useTransform(scrollYProgress, [0, 1], ["0%", "560%"]);
+  const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "900%"]);
+  const y3 = useTransform(scrollYProgress, [0, 1], ["0%", "160%"]);
 
   return (
     <div
       ref={ref}
-      className="relative flex flex-col w-full h-[230dvh] gap-10 pb-10 bg-background-primary overflow-hidden"
+      className="relative flex flex-col w-full h-[250dvh] gap-10 bg-background-primary overflow-hidden"
       id="hero"
     >
       <motion.div
@@ -36,7 +39,7 @@ const Hero = () => {
       <div className="flex relative w-full h-[40%]">
         {/* Text content */}
         <motion.div
-          className="flex w-[90vw]  absolute bottom-[10%] flex-col px-[4vw] z-1"
+          className="flex w-[90vw]  absolute bottom-[5%] flex-col px-[4vw] z-1"
           style={{ y: y2 }}
         >
           <h2 className="flex text-[2vw] text-primary-text fontbody">
@@ -45,6 +48,9 @@ const Hero = () => {
           <h1 className="flex text-[9rem] transition fonthero text-primary-text leading-[9rem] bg-testcolor">
             Web Designer & Developer
           </h1>
+          <p className="fontCta text-[1rem] text-primary-text mt-5 px-2">
+            Code and design are my tools, but problem-solving is my craft
+          </p>
         </motion.div>
 
         {/* Parallax image */}
@@ -61,7 +67,7 @@ const Hero = () => {
 
         {/* Outlined duplicate text (overlay) */}
         <motion.div
-          className="absolute z-10 flex w-[90vw]  bottom-[10%] flex-col px-[4vw]"
+          className="absolute z-10 flex w-[90vw]  bottom-[5%] flex-col px-[4vw]"
           style={{ y: y2 }}
         >
           <h2 className="flex text-[2vw] text-primary-text fontbody">
@@ -70,23 +76,29 @@ const Hero = () => {
           <h1 className="flex text-[9rem] fonthero text-transparent text-outline leading-[9rem] bg-testcolor">
             Web Designer & Developer
           </h1>
+          <p className="fontCta text-[1rem] text-primary-text mt-5 px-2">
+            Code and design are my tools, but problem-solving is my craft
+          </p>
         </motion.div>
       </div>
       <motion.div
         style={{ y: y3 }}
-        className="relative z-30 w-[94%] h-[40%]  mt-20 mx-auto 
+        className="relative z-30 w-[94%] h-[43rem]  mt-20 mx-auto 
                       backdrop-blur-lg bg-white/5 
                       border border-primary-text/30 rounded-[2rem] py-10 px-20"
       >
+        <div className="absolute left-[10%] top-[10%]">
+          <CtaButtonSecond label="view a Case Study" siteLink="/" />
+        </div>
         <h1 className="fontheading text-[6.6rem] text-primary-text text-right">
           About Me
         </h1>
-        <div className="grid grid-cols-3  gap-10 w-full py-10 h-full  ">
+        <div className="grid grid-cols-3  gap-5 w-full py-10 h-full  ">
           <div className="px-12">
             <p className="fontheading text-[6rem] font-bold text-primary-text/70">
               2+
             </p>
-            <p className="text-primary-text fontbody ">
+            <p className="text-primary-text text-[0.8rem] fontbody pr-10">
               years of Web design and development experience
             </p>
           </div>
@@ -94,22 +106,29 @@ const Hero = () => {
             <p className="fontheading text-[6rem] font-bold text-primary-text/70">
               5+
             </p>
-            <p className="text-primary-text fontbody ">
+            <p className="text-primary-text text-[0.8rem] fontbody pr-10">
               years of coding and programming experience{" "}
             </p>
           </div>
-          <p className="text-primary-text fontbody text-[1rem]  px-12 leading-8 col-span-2 ">
-            I am a web developer and tech enthusiast with over 2 years of
-            professional experience in web development and more than 5 years of
-            coding expertise.
-          </p>
-
-          <p className=" px-5 text-primary-text fontbody text-[1rem] leading-10 text-justify row-start-1 row-end-4 col-start-3">
+          <div className="text-primary-text fontbody text-[0.9rem] text-justify tracking-wider px-12 leading-8 col-span-2 ">
+            <p className="mb-6">
+              I am a web developer and tech enthusiast with over 5 years of
+              design and coding experience. To me, being a developer isn’t just
+              about coding features - It’s about Solving Problems, Optimizing
+              Experiences, and Bringing Ideas to Life.
+            </p>
+            <NavLink to={"/about"} className={"underline"}>
+              Read More &gt;
+            </NavLink>
+          </div>
+          <p className=" px-4 text-primary-text fontbody tracking-wide  text-[0.8rem] leading-10 text-justify row-start-1 row-end-4 col-start-3">
             My journey in tech began back in 9th grade with a little curiosity
             and C++, grew through Python in high school, and today thrives in
             full-stack JavaScript. I’m passionate about crafting modern,
             user-friendly websites and applications that turn ideas into
-            effortless digital experiences.
+            effortless digital experiences. I bridge the gap between creativity
+            and logic, not just writing code or designing interfaces, but
+            solving real problems with purposeful solutions
           </p>
         </div>
       </motion.div>
