@@ -12,7 +12,7 @@ const TechStack = () => {
           Tech Stack
         </h1>
         <p className="fontbody text-[1.2rem] py-20 w-[32vw] pl-60 text-primary-text/80">
-          Tools I use to build amazing things
+          Tools I use to design, build and deploy amazing things
         </p>
       </div>
 
