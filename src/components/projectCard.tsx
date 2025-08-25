@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           />
         </NavLink>
       </div>
-      <div className="flex flex-col w-[50%] p-10 pl-20">
+      <div className="flex flex-col w-[50%] justify-center pl-20">
         <h1 className="fontheading text-[3rem] text-primary-text">{title}</h1>
         <div className="flex flex-col px-10 py-5">
           {desc.map((item) => (

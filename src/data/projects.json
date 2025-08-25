@@ -1,12 +1,14 @@
 [
   {
-    "title": "Academy X",
+    "title": "AcademyX - E-learning",
     "imgLink": "/images/academyX.jpeg",
     "desc": [
-      "Website for a Photography Service",
-      "Mobile First Design",
-      "Image optimization for fast loading",
-      "Smooth animations"
+      "An E-learning platform based in India",
+      "Multiple category and sorting system using Zustand state management",
+      "40% faster media loading with Supabase",
+      "realtime analytics with Kafka",
+      "JWT Auth and OAuth google/github",
+      "23% better feedback with clean UI and smooth animations"
     ],
     "liveSite": "https://academy-x-seven.vercel.app/",
     "orientation": "flex-row"

@@ -7,7 +7,7 @@ const ProjectSection = () => {
     <div className="flex bg-transparent relative  w-full overflow-hidden">
       <div className="flex flex-col gap-25 w-full  relative fontheading bg-background-secondary z-50 p-10 pb-60">
         <svg
-          className="absolute z-0 top-[10%] w-auto h-[450vh] left-[-5%]"
+          className="absolute z-0 top-[12%] w-auto h-[450vh] left-[-5%]"
           viewBox="0 0 3908 8783"
           fill="none"
         >
@@ -21,7 +21,7 @@ const ProjectSection = () => {
           <h1 className="flex  text-[6rem] h-fit text-primary-text">
             Featured Projects{" "}
           </h1>
-          <p className="flex h-fit mt-16 fontBody w-[24vw] tracking-wider text-primary-text/70">
+          <p className="flex h-fit mt-20 fontBody w-[24vw] tracking-wider text-primary-text/70">
             A CURATED SELECTION OF MY MOST PASSIONATELY CRAFTED PROJECTS{" "}
           </p>
         </div>
