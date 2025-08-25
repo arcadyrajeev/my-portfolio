@@ -29,7 +29,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <img
             src={imgLink}
             alt="project preview"
-            className="absolute top-0 object-top-left w-full h-full object-cover group-hover:scale-[1.04] transition-scale duration-300 ease-out"
+            className="absolute object-center w-full h-full object-cover group-hover:scale-[1.04] transition-scale duration-300 ease-out"
           />
         </NavLink>
       </div>
