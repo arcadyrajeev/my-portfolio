@@ -93,7 +93,7 @@ const Hero = () => {
         <h1 className="fontheading text-[3.6rem] lg:text-[6.6rem] text-primary-text text-center md:text-right">
           About Me
         </h1>
-        <div className="grid grid-cols-1  lg:grid-cols-3 bg-red-200 gap-4 lg:gap-15 w-full py-4 lg:py-10 h-full   ">
+        <div className="grid grid-cols-1  lg:grid-cols-3 gap-4 lg:gap-15 w-full py-4 lg:py-10 h-full   ">
           <div className="flex-col px-12">
             <p className="fontheading text-[3rem]  md:text-[6rem] font-bold text-primary-text/70">
               2+
