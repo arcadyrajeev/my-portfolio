@@ -4,10 +4,10 @@ import projectData from "../data/projects.json";
 
 const ProjectSection = () => {
   return (
-    <div className="flex bg-transparent relative  w-full overflow-hidden">
+    <div className="flex flex-col md:flex-row bg-transparent relative  w-full overflow-hidden">
       <div className="flex flex-col gap-25 w-full  relative fontheading bg-background-secondary z-50 p-10 pb-60">
         <svg
-          className="absolute z-0 top-[12%] w-auto h-[450vh] left-[-5%]"
+          className="absolute hidden md:visible z-0 top-[12%] w-auto h-[450vh] left-[-5%]"
           viewBox="0 0 3908 8783"
           fill="none"
         >
@@ -17,15 +17,15 @@ const ProjectSection = () => {
             stroke-width="84"
           />
         </svg>
-        <div className="flex w-full gap-[8vw] mt-15">
-          <h1 className="flex  text-[6rem] h-fit text-primary-text">
+        <div className="flex w-full justify-center md:justify-start flex-col md:flex-row items-center lg:gap-[8vw] mt-15">
+          <h1 className="flex justify-center md:justify-start text-[2rem] w-full md:w-[70%] md:text-[6rem] h-fit text-primary-text">
             Featured Projects{" "}
           </h1>
-          <p className="flex h-fit mt-16 fontbody text-[1rem] w-[24vw] tracking-wider text-primary-text/90">
+          <p className="flex h-fit w-full md:w-[20%] mt-16 text-center md:text-left fontbody text-[0.8rem] md:text-[1vw] w-[24vw] tracking-wider text-primary-text/90">
             A curated selection of my most passionately crafted projects{" "}
           </p>
         </div>
-        <div className="flex flex-col gap-50 z-2">
+        <div className="flex items-center flex-col gap-50 z-2">
           {projectData.map((project) => (
             <ProjectCard
               imgLink={project.imgLink}

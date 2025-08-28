@@ -11,10 +11,10 @@ const CtaButtonMain: React.FC<CtaProps> = ({ label, siteLink }) => {
     <NavLink
       to={siteLink}
       target="blank"
-      className="group relative flex items-center justify-center bg-accent w-64 h-16 rounded-[100vw] overflow-hidden"
+      className="group relative flex items-center justify-center bg-accent w-40 md:w-64 h-10 md:h-16 rounded-[100vw] overflow-hidden"
     >
       <div className="buttonShine group-hover:rounded-[10vw] group-hover:scale-[1.2]"></div>
-      <h1 className="fontCta tracking-wider text-secondary-text z-[2] text-[1.8rem] group-hover:translate-x-3 transition-all duration-300 ease-in-out">
+      <h1 className="fontCta tracking-wider text-secondary-text z-[2] text-[5vw] md:text-[1.8rem] group-hover:translate-x-3 transition-all duration-300 ease-in-out">
         {label}
       </h1>
       <div className="flex w-10 h-10 items-start justify-end ml-5 overflow-hidden z-[2]">

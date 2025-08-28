@@ -45,10 +45,10 @@ const Navbar = () => {
         />
       </NavLink>
       <nav
-        className="flex w-[9vw] overflow-hidden justify-center 
+        className="hidden md:flex absolute md:relative flex-col md:flex-row w-[4rem] md:w-[9vw] overflow-hidden md:justify-center 
              bg-primary-text text-[1.32rem] rounded-[100vw] 
              transition-all
-             duration-300 ease-in-out fontbody hover:w-[27vw]"
+             duration-300 ease-in-out fontbody md:hover:w-[27vw]"
       >
         {ordered.map((item) => (
           <NavLink
@@ -65,10 +65,13 @@ const Navbar = () => {
       </nav>
       <button
         onClick={toggleTheme}
-        className="cursor-pointer flex w-[5rem] h-full rounded-[100vw] bg-toggle  px-2 py-1 shadow-[inset_0_2px_4px_rgba(0,0,0,0.25)]"
+        className="cursor-pointer flex  w-[4rem] lg:w-[5rem] h-8 lg:h-full rounded-[100vw] bg-toggle   px-1 lg:px-2 py-0.5 lg:py-1 shadow-[inset_0_2px_4px_rgba(0,0,0,0.25)]"
       >
         {isDarkMode ? (
-          <div className="toggle translate-x-[2rem]" id="theme-toggle">
+          <div
+            className="toggle translate-x-[1.6rem] lg:translate-x-[2rem]"
+            id="theme-toggle"
+          >
             <Moon className="text-accent " />
           </div>
         ) : (

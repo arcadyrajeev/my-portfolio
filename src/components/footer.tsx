@@ -36,7 +36,7 @@ const Footer = () => {
           />
         </NavLink>
       </div>
-      <p className="w-full text-center fontCta text-[1rem] text-primary-text/50 tracking-wide ">
+      <p className="w-full text-center fontCta text-[4vw] text-[1rem] text-primary-text/50 tracking-wide ">
         &copy;2025 all rights reserved. www.arcadydesign.com
       </p>
     </footer>

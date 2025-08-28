@@ -7,15 +7,15 @@ interface TechProps {
 
 const TechCard: React.FC<TechProps> = ({ title, iconList }) => {
   return (
-    <div className="flex w-full h-fit justify-between items-center p-20 my-4">
-      <div className="flex fontheading px-6 text-[6rem] w-[30vw] tracking-tighter leading-40 text-accent">
+    <div className="flex bg-red-200 flex-col items-center md:items-start md:flex-row w-full h-fit items-center md:my-4">
+      <div className="flex w-full md:w-[40%] justify-center md:justify-start px-8 fontheading  text-[2rem] md:text-[10vw]  tracking-tighter leading-40 text-accent">
         {title}
       </div>
-      <div className="grid grid-cols-5 gap-8">
+      <div className="grid grid-cols-4 md:grid-cols-5 gap-2 md:gap-8">
         {iconList.map((icon) => (
-          <div className="flex flex-col gap-4 items-center w-24 h-32 p-4">
+          <div className="flex flex-col gap-1 md:gap-4 items-center w-15  h-20 md:w-24 md:h-32 p-4">
             <img src={icon.iconLink} />
-            <p className="text-primary-text text-center fontbody">
+            <p className="text-primary-text text-[1.2vw] text-center fontbody">
               {icon.text}
             </p>
           </div>
