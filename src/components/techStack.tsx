@@ -17,9 +17,9 @@ const TechStack = () => {
       </div>
 
       <TechCard title="Front end" iconList={frontendData} />
-      <hr className="border-[0.2vw] border-accent mx-10" />
+      <hr className="border-[0.2vw] w-full border-accent mx-10" />
       <TechCard title="Back end" iconList={backendData} />
-      <hr className="border-[0.2vw] border-accent mx-10" />
+      <hr className="border-[0.2vw] w-full border-accent mx-10" />
       <TechCard title="DevOps & Tools" iconList={devopsData} />
     </section>
   );

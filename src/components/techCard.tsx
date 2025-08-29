@@ -7,7 +7,7 @@ interface TechProps {
 
 const TechCard: React.FC<TechProps> = ({ title, iconList }) => {
   return (
-    <div className="flex bg-red-200 flex-col items-center md:items-start md:flex-row w-full h-fit items-center md:my-4">
+    <div className="flex flex-col items-center md:items-start md:flex-row w-full h-fit items-center md:my-4">
       <div className="flex w-full md:w-[40%] justify-center md:justify-start px-8 fontheading  text-[2rem] md:text-[10vw]  tracking-tighter leading-40 text-accent">
         {title}
       </div>
