@@ -7,7 +7,7 @@ const ProjectSection = () => {
     <div className="flex flex-col md:flex-row bg-transparent relative  w-full overflow-hidden">
       <div className="flex flex-col gap-25 w-full  relative fontheading bg-background-secondary z-50 p-10 pb-60">
         <svg
-          className="absolute hidden md:visible z-0 top-[12%] w-auto h-[450vh] left-[-5%]"
+          className="absolute  z-0 top-[12%] w-auto h-[450vh] left-[-5%]"
           viewBox="0 0 3908 8783"
           fill="none"
         >
