@@ -48,7 +48,7 @@ const Hero = () => {
   return (
     <div
       ref={ref}
-      className="relative flex flex-col w-full h-[400vw] lg:h-[200vw] xl:h-[250vh] md:gap-10 bg-background-primary overflow-hidden"
+      className="relative flex flex-col w-full h-[380vw] lg:h-[200vw] xl:h-[250vh] md:gap-10 bg-background-primary overflow-hidden"
       id="hero"
     >
       {/* Background blobs */}
@@ -61,7 +61,7 @@ const Hero = () => {
         <div className="blob-3 top-[10%]"></div>
       </motion.div>
 
-      <div className="flex relative w-full h-[35%] lg:h-[50%] xl:h-[40%]">
+      <div className="flex relative w-full h-[40%] lg:h-[50%] xl:h-[40%]">
         {/* Text content */}
         <motion.div
           style={{ y: y2, willChange: "transform", translateZ: 0 }}
@@ -110,7 +110,7 @@ const Hero = () => {
       {/* About section */}
       <motion.div
         style={{ y: y3, willChange: "transform", translateZ: 0 }}
-        className="relative flex flex-col z-30 w-[94%] h-[120dvh] lg:h-[60dvh] xl:lg:h-[43rem] lg:mt-20 mx-auto 
+        className="relative flex flex-col z-30 w-[94%] h-[200vw] lg:h-[160vw] xl:h-[43rem] lg:mt-20 mx-auto 
                       backdrop-blur-lg bg-white/5 
                       border border-primary-text/30 rounded-[2rem] pt-30 px-4 py-30 md:py-10 xl:px-20"
       >
