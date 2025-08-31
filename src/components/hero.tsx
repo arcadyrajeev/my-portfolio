@@ -48,7 +48,7 @@ const Hero = () => {
   return (
     <div
       ref={ref}
-      className="relative flex flex-col w-full h-[220vh] lg:h-[160vh] xl:h-[250vh] md:gap-10 bg-background-primary overflow-hidden"
+      className="relative flex flex-col w-full h-[400vw] lg:h-[200vw] xl:h-[250vh] md:gap-10 bg-background-primary overflow-hidden"
       id="hero"
     >
       {/* Background blobs */}
@@ -81,7 +81,7 @@ const Hero = () => {
         {/* Parallax image */}
         <motion.div
           style={{ y: y1, willChange: "transform", translateZ: 0 }}
-          className="flex aspect-[16/9] bg-blue-200 w-[100vw] md:w-[80vw] xl:w-full h-[120vw] md:h-[100vw] lg:h-[100vw] xl:h-[100vh] mt-20 xl:mt-0 relative z-5"
+          className="flex aspect-[16/9] bg-blue-200 w-[100vw] md:w-[100vw] xl:w-full h-[120vw] md:h-[100vw] lg:h-[100vw] xl:h-[100vh] mt-20 xl:mt-0 relative z-5"
         >
           <img
             src="./imagerkd2.webp"
