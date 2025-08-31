@@ -17,7 +17,7 @@ const useResponsiveY = (scrollYProgress: any) => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
         // mobile
-        setRanges({ y1: "400%", y2: "600%", y3: "80%", y4: "200%" });
+        setRanges({ y1: "700%", y2: "600%", y3: "80%", y4: "200%" });
       } else if (window.innerWidth < 1024) {
         // tablet
         setRanges({ y1: "300%", y2: "400%", y3: "100%", y4: "200%" });
@@ -61,11 +61,11 @@ const Hero = () => {
         <div className="blob-3 top-[10%]"></div>
       </motion.div>
 
-      <div className="flex relative w-full h-[40%] lg:h-[50%] xl:h-[40%]">
+      <div className="flex relative w-full h-[35%] lg:h-[50%] xl:h-[40%]">
         {/* Text content */}
         <motion.div
           style={{ y: y2, willChange: "transform", translateZ: 0 }}
-          className="flex w-[90vw] absolute bottom-[5%] flex-col px-[4vw] z-1"
+          className="flex bg-red-200 w-[90vw] absolute bottom-[5%] flex-col px-[4vw] z-1"
         >
           <h2 className="flex text-[1.2rem] md:text-[2rem] xl:text-[1.2rem] text-primary-text fontbody">
             Rajeev Das
@@ -81,7 +81,7 @@ const Hero = () => {
         {/* Parallax image */}
         <motion.div
           style={{ y: y1, willChange: "transform", translateZ: 0 }}
-          className="flex aspect-[16/9]  w-[100vw] md:w-[80vw] xl:w-full h-[120vw] md:h-[100vw] lg:h-[100vw] xl:h-[100vh] mt-20 xl:mt-0 relative z-5"
+          className="flex aspect-[16/9] bg-blue-200 w-[100vw] md:w-[80vw] xl:w-full h-[120vw] md:h-[100vw] lg:h-[100vw] xl:h-[100vh] mt-20 xl:mt-0 relative z-5"
         >
           <img
             src="./imagerkd2.webp"
