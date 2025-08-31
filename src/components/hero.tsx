@@ -65,7 +65,7 @@ const Hero = () => {
         {/* Text content */}
         <motion.div
           style={{ y: y2, willChange: "transform", translateZ: 0 }}
-          className="flex bg-red-200 w-[90vw] absolute bottom-[5%] flex-col px-[4vw] z-1"
+          className="flex w-[90vw] absolute bottom-[5%] flex-col px-[4vw] z-1"
         >
           <h2 className="flex text-[1.2rem] md:text-[2rem] xl:text-[1.2rem] text-primary-text fontbody">
             Rajeev Das
@@ -81,7 +81,7 @@ const Hero = () => {
         {/* Parallax image */}
         <motion.div
           style={{ y: y1, willChange: "transform", translateZ: 0 }}
-          className="flex aspect-[16/9] bg-blue-200 w-[100vw] md:w-[100vw] xl:w-full h-[120vw] md:h-[100vw] lg:h-[100vw] xl:h-[100vh] mt-20 xl:mt-0 relative z-5"
+          className="flex aspect-[16/9] w-[100vw] md:w-[100vw] xl:w-full h-[120vw] md:h-[100vw] lg:h-[100vw] xl:h-[100vh] mt-20 xl:mt-0 relative z-5"
         >
           <img
             src="./imagerkd2.webp"
