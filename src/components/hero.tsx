@@ -81,7 +81,7 @@ const Hero = () => {
         {/* Parallax image */}
         <motion.div
           style={{ y: y1, willChange: "transform", translateZ: 0 }}
-          className="flex w-[150vw] xl:w-full h-[70dvh] lg:h-[80dvh] xl:h-[100vh] mt-20 xl:mt-0 xl:top-0 relative z-5 justify-end"
+          className="flex w-[150vw] xl:w-full h-[70dvh] lg:h-[80dvh] xl:h-[100vh] mt-20 xl:mt-0 relative z-5 justify-end"
         >
           <img
             src="./imagerkd2.webp"
