@@ -48,13 +48,13 @@ const Hero = () => {
   return (
     <div
       ref={ref}
-      className="relative flex flex-col w-full h-[220dvh] lg:h-[160dvh] xl:h-[250dvh] md:gap-10 bg-background-primary overflow-hidden"
+      className="relative flex flex-col w-full h-[220vh] lg:h-[160vh] xl:h-[250vh] md:gap-10 bg-background-primary overflow-hidden"
       id="hero"
     >
       {/* Background blobs */}
       <motion.div
         style={{ y: y4, willChange: "transform", translateZ: 0 }}
-        className="flex top-0 absolute z-0 w-full h-full lg:h-[90dvh] xl:h-[100dvh] justify-end"
+        className="flex top-0 absolute z-0 w-full h-full lg:h-[90vh] xl:h-[100vh] justify-end"
       >
         <div className="blob-1 top-[12%] lg:top-[40%]"></div>
         <div className="blob-2 top-[8%] lg:top-[5%]"></div>
