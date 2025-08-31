@@ -20,7 +20,7 @@ const useResponsiveY = (scrollYProgress: any) => {
         setRanges({ y1: "210%", y2: "200%", y3: "80%", y4: "100%" });
       } else if (window.innerWidth < 1024) {
         // tablet
-        setRanges({ y1: "450%", y2: "700%", y3: "300%", y4: "500%" });
+        setRanges({ y1: "250%", y2: "400%", y3: "100%", y4: "200%" });
       } else {
         // desktop
         setRanges({ y1: "560%", y2: "900%", y3: "125%", y4: "200%" });
@@ -81,11 +81,11 @@ const Hero = () => {
         {/* Parallax image */}
         <motion.div
           style={{ y: y1, willChange: "transform", translateZ: 0 }}
-          className="flex w-[150vw] xl:w-full h-[70dvh] lg:h-[80dvh] xl:h-[100vh] mt-20 xl:mt-0 relative z-5 justify-end"
+          className="flex bg-red-200 w-[150vw] xl:w-full h-[70dvh] lg:h-[80dvh] xl:h-[100vh] mt-20 xl:mt-0 relative z-5"
         >
           <img
             src="./imagerkd2.webp"
-            className="absolute w-full h-full object-contain right-[-20%] "
+            className="w-full h-full object-contain translate-x-10 lg:translate-x-40 xl:translate-x-50"
             alt="Rajeev Das"
           />
         </motion.div>
