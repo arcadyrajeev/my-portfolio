@@ -1,11 +1,49 @@
 "use client";
-import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
 
 import CtaButtonSecond from "./ctaButtonSecond";
 import { NavLink } from "react-router-dom";
 
+const useResponsiveY = (scrollYProgress: any) => {
+  const [ranges, setRanges] = useState({
+    y1: "560%",
+    y2: "900%",
+    y3: "125%",
+    y4: "600%",
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        // mobile
+        setRanges({ y1: "100%", y2: "200%", y3: "80%", y4: "100%" });
+      } else if (window.innerWidth < 1024) {
+        // tablet
+        setRanges({ y1: "150%", y2: "200%", y3: "100%", y4: "100%" });
+      } else {
+        // desktop
+        setRanges({ y1: "560%", y2: "900%", y3: "125%", y4: "200%" });
+      }
+    };
+
+    handleResize(); // run once
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return {
+    y1: useTransform(scrollYProgress, [0, 1], ["0%", ranges.y1]),
+    y2: useTransform(scrollYProgress, [0, 1], ["0%", ranges.y2]),
+    y3: useTransform(scrollYProgress, [0, 1], ["0%", ranges.y3]),
+    y4: useTransform(scrollYProgress, [0, 1], ["0%", ranges.y4]),
+  };
+};
+
 const Hero = () => {
   const ref = useRef(null);
+  const { scrollYProgress } = useScroll();
+  const { y1, y2, y3, y4 } = useResponsiveY(scrollYProgress);
 
   return (
     <div
@@ -14,15 +52,21 @@ const Hero = () => {
       id="hero"
     >
       {/* Background blobs */}
-      <div className="flex top-0 absolute z-0 w-full h-full lg:h-[90vh] xl:h-[100vh] justify-end">
+      <motion.div
+        style={{ y: y4, willChange: "transform", translateZ: 0 }}
+        className="flex top-0 absolute z-0 w-full h-full lg:h-[90vh] xl:h-[100vh] justify-end"
+      >
         <div className="blob-1 top-[12%] lg:top-[40%]"></div>
         <div className="blob-2 top-[8%] lg:top-[5%]"></div>
         <div className="blob-3 top-[10%]"></div>
-      </div>
+      </motion.div>
 
       <div className="flex relative w-full h-[40%] lg:h-[50%] xl:h-[40%]">
         {/* Text content */}
-        <div className="flex w-[90vw] absolute bottom-[5%] flex-col px-[4vw] z-1">
+        <motion.div
+          style={{ y: y2, willChange: "transform", translateZ: 0 }}
+          className="flex w-[90vw] absolute bottom-[5%] flex-col px-[4vw] z-1"
+        >
           <h2 className="flex text-[1.2rem] md:text-[2rem] xl:text-[1.2rem] text-primary-text fontbody">
             Rajeev Das
           </h2>
@@ -32,19 +76,25 @@ const Hero = () => {
           <p className="fontCta text-[1rem] md:text-[2rem] xl:text-[1rem] text-primary-text mt-5 px-2">
             Code and design are my tools, but problem-solving is my craft
           </p>
-        </div>
+        </motion.div>
 
-        {/* Static image (no parallax) */}
-        <div className="flex aspect-[16/9] bg-red-200 w-[150vw] xl:w-full h-[70dvh] lg:h-[80dvh] xl:h-[100vh] mt-20 xl:mt-0 relative z-5">
+        {/* Parallax image */}
+        <motion.div
+          style={{ y: y1, willChange: "transform", translateZ: 0 }}
+          className="flex aspect-[16/9]  w-[100vw] md:w-[80vw] xl:w-full h-[140vw] md:h-[100vw] lg:h-[100vw] xl:h-[100vh] mt-20 xl:mt-0 relative z-5"
+        >
           <img
             src="./imagerkd2.webp"
             className="w-full h-full object-contain translate-x-10 lg:translate-x-40 xl:translate-x-50"
             alt="Rajeev Das"
           />
-        </div>
+        </motion.div>
 
         {/* Outlined duplicate text */}
-        <div className="absolute z-10 flex w-[90vw] bottom-[5%] flex-col px-[4vw]">
+        <motion.div
+          style={{ y: y2, willChange: "transform", translateZ: 0 }}
+          className="absolute z-10 flex w-[90vw] bottom-[5%] flex-col px-[4vw]"
+        >
           <h2 className="flex text-[1.2rem] md:text-[2rem] xl:text-[1.2rem] text-primary-text fontbody">
             Rajeev Das
           </h2>
@@ -54,11 +104,12 @@ const Hero = () => {
           <p className="fontCta text-[1rem] md:text-[2rem] xl:text-[1rem] text-primary-text mt-5 px-2">
             Code and design are my tools, but problem-solving is my craft
           </p>
-        </div>
+        </motion.div>
       </div>
 
       {/* About section */}
-      <div
+      <motion.div
+        style={{ y: y3, willChange: "transform", translateZ: 0 }}
         className="relative flex flex-col z-30 w-[94%] h-[120dvh] lg:h-[60dvh] xl:lg:h-[43rem] lg:mt-20 mx-auto 
                       backdrop-blur-lg bg-white/5 
                       border border-primary-text/30 rounded-[2rem] pt-30 px-4 py-30 md:py-10 xl:px-20"
@@ -107,7 +158,7 @@ const Hero = () => {
             solving real problems with purposeful solutions
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
