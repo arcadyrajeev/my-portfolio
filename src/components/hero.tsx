@@ -17,10 +17,10 @@ const useResponsiveY = (scrollYProgress: any) => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
         // mobile
-        setRanges({ y1: "200%", y2: "300%", y3: "80%", y4: "300%" });
+        setRanges({ y1: "300%", y2: "400%", y3: "80%", y4: "300%" });
       } else if (window.innerWidth < 1024) {
         // tablet
-        setRanges({ y1: "450%", y2: "500%", y3: "100%", y4: "300%" });
+        setRanges({ y1: "300%", y2: "400%", y3: "100%", y4: "200%" });
       } else {
         // desktop
         setRanges({ y1: "560%", y2: "900%", y3: "125%", y4: "200%" });
