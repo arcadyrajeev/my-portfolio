@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Lenis from "lenis";
 
 export default function SmoothScrollProvider({
@@ -9,13 +9,10 @@ export default function SmoothScrollProvider({
 }) {
   const rafId = useRef<number | null>(null);
   const settleTimer = useRef<number | null>(null);
-  const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
     // Enable Lenis only on desktop
     const isDesktop = window.innerWidth >= 1024; // lg breakpoint
-    setEnabled(isDesktop);
-
     if (!isDesktop) return; // 👉 skip Lenis on mobile/tablet
 
     const lenis = new Lenis({
