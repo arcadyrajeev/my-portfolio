@@ -11,7 +11,7 @@
       "23% better feedback with clean UI and smooth animations"
     ],
     "liveSite": "https://academy-x-seven.vercel.app/",
-    "orientation": "md:flex-row"
+    "orientation": "xl:flex-row"
   },
   {
     "title": "Lunaria Photography",
@@ -23,7 +23,7 @@
       "Smooth animations"
     ],
     "liveSite": "https://lunaria.arcadydesign.com/",
-    "orientation": "md:flex-row-reverse"
+    "orientation": "xl:flex-row-reverse"
   },
   {
     "title": "Hart Legal",
@@ -35,7 +35,7 @@
       "Smooth animations"
     ],
     "liveSite": "https://lunaria.arcadydesign.com/",
-    "orientation": "md:flex-row"
+    "orientation": "xl:flex-row"
   },
   {
     "title": "Ellanore Joaillerie",
@@ -47,6 +47,6 @@
       "Smooth animations"
     ],
     "liveSite": "https://lunaria.arcadydesign.com/",
-    "orientation": "md:flex-row-reverse"
+    "orientation": "xl:flex-row-reverse"
   }
 ]

@@ -5,9 +5,9 @@ import projectData from "../data/projects.json";
 const ProjectSection = () => {
   return (
     <div className="flex flex-col md:flex-row bg-transparent relative  w-full overflow-hidden">
-      <div className="flex flex-col gap-25 w-full  relative fontheading bg-background-secondary z-50 p-10 pb-60">
+      <div className="flex flex-col gap-8 lg:gap-25 w-full  relative fontheading bg-background-secondary z-50  p-4 md:p-5 lg:p-10 pb-30 lg:pb-60">
         <svg
-          className="absolute  z-0 top-[12%] w-auto h-[450vh] left-[-5%]"
+          className="absolute opacity-[0] md:opacity-[1] z-0 top-[12%] w-auto h-[450vh] left-[-5%]"
           viewBox="0 0 3908 8783"
           fill="none"
         >
@@ -18,14 +18,14 @@ const ProjectSection = () => {
           />
         </svg>
         <div className="flex w-full justify-center md:justify-start flex-col md:flex-row items-center lg:gap-[8vw] mt-15">
-          <h1 className="flex justify-center md:justify-start text-[2rem] w-full md:w-[70%] md:text-[6rem] h-fit text-primary-text">
+          <h1 className="flex justify-center md:justify-start text-[2rem] w-full md:w-[70%] lg:text-[4rem] xl:text-[6rem] h-fit text-primary-text">
             Featured Projects{" "}
           </h1>
-          <p className="flex h-fit w-full md:w-[20%] mt-16 text-center md:text-left fontbody text-[0.8rem] md:text-[1vw] w-[24vw] tracking-wider text-primary-text/90">
+          <p className="flex h-fit w-[80%] lg:w-[30%] xl:w-[20%] m-10 lg:mt-16 text-center md:text-left fontbody text-[0.8rem] md:text-[1rem] xl:text-[1vw] w-[24vw] tracking-wider text-primary-text/90">
             A curated selection of my most passionately crafted projects{" "}
           </p>
         </div>
-        <div className="flex items-center flex-col gap-50 z-2">
+        <div className="flex items-center flex-col gap-30 md:gap-40 lg:gap-50 z-2">
           {projectData.map((project) => (
             <ProjectCard
               imgLink={project.imgLink}
