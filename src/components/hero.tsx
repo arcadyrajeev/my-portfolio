@@ -20,7 +20,7 @@ const useResponsiveY = (scrollYProgress: any) => {
         setRanges({ y1: "100%", y2: "200%", y3: "80%", y4: "100%" });
       } else if (window.innerWidth < 1024) {
         // tablet
-        setRanges({ y1: "250%", y2: "400%", y3: "100%", y4: "200%" });
+        setRanges({ y1: "150%", y2: "200%", y3: "100%", y4: "100%" });
       } else {
         // desktop
         setRanges({ y1: "560%", y2: "900%", y3: "125%", y4: "200%" });
