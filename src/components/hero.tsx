@@ -17,7 +17,7 @@ const useResponsiveY = (scrollYProgress: any) => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
         // mobile
-        setRanges({ y1: "950%", y2: "800%", y3: "80%", y4: "300%" });
+        setRanges({ y1: "210%", y2: "200%", y3: "80%", y4: "100%" });
       } else if (window.innerWidth < 1024) {
         // tablet
         setRanges({ y1: "450%", y2: "700%", y3: "300%", y4: "500%" });
