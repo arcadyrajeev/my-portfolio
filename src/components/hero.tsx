@@ -48,7 +48,7 @@ const Hero = () => {
   return (
     <div
       ref={ref}
-      className="relative flex flex-col w-full h-[380vw] lg:h-[200vw] xl:h-[250vh] md:gap-10 bg-background-primary overflow-hidden"
+      className="relative flex flex-col w-full h-fit pb-28 md:gap-10 bg-background-primary overflow-hidden"
       id="hero"
     >
       {/* Background blobs */}
@@ -61,11 +61,11 @@ const Hero = () => {
         <div className="blob-3 top-[10%]"></div>
       </motion.div>
 
-      <div className="flex relative w-full h-[40%] lg:h-[50%] xl:h-[40%]">
+      <div className="flex relative w-full h-[136vw] lg:h-[100vw] xl:h-[100vh]">
         {/* Text content */}
         <motion.div
           style={{ y: y2, willChange: "transform", translateZ: 0 }}
-          className="flex w-[90vw] absolute bottom-[5%] flex-col px-[4vw] z-1"
+          className="flex w-[90vw] absolute bottom-[5%] flex-col px-[4vw] z-1 mt-20"
         >
           <h2 className="flex text-[1.2rem] md:text-[2rem] xl:text-[1.2rem] text-primary-text fontbody">
             Rajeev Das
@@ -110,7 +110,7 @@ const Hero = () => {
       {/* About section */}
       <motion.div
         style={{ y: y3, willChange: "transform", translateZ: 0 }}
-        className="relative flex flex-col z-30 w-[94%] h-[200vw] lg:h-[160vw] xl:h-[43rem] lg:mt-20 mx-auto 
+        className="relative flex flex-col z-30 w-[94%] h-fit  mt-0 xl:mt-20 mx-auto 
                       backdrop-blur-lg bg-white/5 
                       border border-primary-text/30 rounded-[2rem] pt-30 px-4 py-30 md:py-10 xl:px-20"
       >
@@ -120,7 +120,7 @@ const Hero = () => {
         <h1 className="fontheading text-[3.6rem] lg:text-[6.6rem] text-primary-text text-center md:text-right">
           About Me
         </h1>
-        <div className="p-5 grid grid-cols-1 lg:grid-cols-3 gap-10 xl:gap-15 w-full py-5 h-full">
+        <div className="p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-15 w-full py-5 h-full">
           <div className="flex-col px-12">
             <p className="fontheading text-[3rem] md:text-[6rem] font-bold text-primary-text/70">
               2+
