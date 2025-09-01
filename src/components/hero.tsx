@@ -61,7 +61,7 @@ const Hero = () => {
         <div className="blob-3 top-[10%]"></div>
       </motion.div>
 
-      <div className="flex relative w-full h-[136vw] lg:h-[100vw] xl:h-[100vh]">
+      <div className="flex relative w-full h-[136vw] md:h-[110vw] lg:h-[60vw] xl:h-[100vh]">
         {/* Text content */}
         <motion.div
           style={{ y: y2, willChange: "transform", translateZ: 0 }}
@@ -70,10 +70,10 @@ const Hero = () => {
           <h2 className="flex text-[1.2rem] md:text-[2rem] xl:text-[1.2rem] text-primary-text fontbody">
             Rajeev Das
           </h2>
-          <h1 className="flex text-[3.2rem] md:text-[9rem] transition fonthero text-primary-text leading-16 md:leading-[9rem] bg-testcolor">
+          <h1 className="flex text-[3.2rem] md:text-[5rem] lg:text-[6rem] xl:text-[9rem] transition fonthero text-primary-text leading-16 xl:leading-[9rem] md:leading-[6.5rem] bg-testcolor">
             Web Designer & Developer
           </h1>
-          <p className="fontCta text-[1rem] md:text-[2rem] xl:text-[1rem] text-primary-text mt-5 px-2">
+          <p className="fontCta text-[1rem] md:text-[2rem] lg:text-[1.4rem] xl:text-[1rem] text-primary-text mt-5 px-2">
             Code and design are my tools, but problem-solving is my craft
           </p>
         </motion.div>
@@ -81,7 +81,7 @@ const Hero = () => {
         {/* Parallax image */}
         <motion.div
           style={{ y: y1, willChange: "transform", translateZ: 0 }}
-          className="flex aspect-[16/9] w-[100vw] md:w-[100vw] xl:w-full h-[120vw] md:h-[100vw] lg:h-[100vw] xl:h-[100vh] mt-20 xl:mt-0 relative z-5"
+          className="flex aspect-[16/9] w-[100vw] md:w-[100vw] xl:w-full md:h-[80vw] lg:h-[60vw] xl:h-[100vh] mt-20 xl:mt-0 relative z-5"
         >
           <img
             src="./imagerkd2.webp"
@@ -98,10 +98,10 @@ const Hero = () => {
           <h2 className="flex text-[1.2rem] md:text-[2rem] xl:text-[1.2rem] text-primary-text fontbody">
             Rajeev Das
           </h2>
-          <h1 className="flex text-[3.2rem] md:text-[9rem] fonthero text-transparent text-outline-1 md:text-outline-2 leading-16 md:leading-[9rem] bg-testcolor">
+          <h1 className="flex text-[3.2rem] md:text-[5rem] lg:text-[6rem] xl:text-[9rem] fonthero text-transparent text-outline-1 md:text-outline-2 leading-16 xl:leading-[9rem] md:leading-[6.5rem] bg-testcolor">
             Web Designer & Developer
           </h1>
-          <p className="fontCta text-[1rem] md:text-[2rem] xl:text-[1rem] text-primary-text mt-5 px-2">
+          <p className="fontCta text-[1rem] md:text-[2rem] lg:text-[1.4rem] xl:text-[1rem] text-primary-text mt-5 px-2">
             Code and design are my tools, but problem-solving is my craft
           </p>
         </motion.div>

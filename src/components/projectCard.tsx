@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className={`${orientation} flex flex-col w-full`}>
-      <div className="group relative flex justify-center xl:justify-start  w-full  xl:w-[50%] h-[40dvh] xl:h-[64dvh] xl:px-5 xl:px-10">
+      <div className="group relative flex justify-center xl:justify-start  w-full  xl:w-[50%] h-[80vw] md:h-[60vw] lg:h-[40vw] xl:h-[64dvh] xl:px-5 xl:px-10">
         <NavLink
           to={liveSite}
           target="_blank"
@@ -38,7 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </h1>
         <div className="flex flex-col xl:px-10 lg:py-5 pl-10">
           {desc.map((item) => (
-            <p className=" fontBody text-[0.7rem] lg:text-[1.6rem] xl:text-[1rem] text-primary-text/80 my-2 lg:m-2">
+            <p className=" fontBody text-[0.7rem] md:text-[1.2rem] lg:text-[1rem] xl:text-[1rem] text-primary-text/80 my-2 lg:m-2">
               {item}
             </p>
           ))}
