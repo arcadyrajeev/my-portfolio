@@ -26,27 +26,28 @@
     "orientation": "xl:flex-row-reverse"
   },
   {
-    "title": "Hart Legal",
-    "imgLink": "/images/hart-legal.png",
+    "title": "Close-X-Pay",
+    "imgLink": "/images/closeXpay.png",
     "desc": [
-      "Website for a Lawfirm Service",
-      "Mobile First Design",
-      "Image optimization for fast loading",
+      "Website for a Fintech Startup",
+      "Mobile compatiblet Design",
+      "Smart flow for better UX",
       "Smooth animations"
     ],
-    "liveSite": "https://lunaria.arcadydesign.com/",
+    "liveSite": "https://closexpay.in/",
     "orientation": "xl:flex-row"
   },
   {
-    "title": "Ellanore Joaillerie",
-    "imgLink": "/images/Ej-web.png",
+    "title": "iLogiBOT Fashion",
+    "imgLink": "/images/ilogibot.png",
     "desc": [
-      "An e-commerce website for a jewlery brand",
+      "An e-commerce website for a clothing brand",
       "Mobile First Design",
       "Image optimization for fast loading",
-      "Smooth animations"
+      "Smooth animations",
+      "Modern and Bold design"
     ],
-    "liveSite": "https://lunaria.arcadydesign.com/",
+    "liveSite": "https://demo-ecom-six.vercel.app/",
     "orientation": "xl:flex-row-reverse"
   }
 ]
