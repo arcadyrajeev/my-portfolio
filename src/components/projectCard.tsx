@@ -1,6 +1,6 @@
 import React from "react";
-import CtaButtonMain from "./ctaButtonMain";
 import { NavLink } from "react-router-dom";
+import CtaButtonMain from "./ctaButtonMain";
 
 interface ProjectCardProps {
   imgLink: string;
@@ -18,36 +18,46 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   orientation,
 }) => {
   return (
-    <div className={`${orientation} flex flex-col w-full`}>
-      <div className="group relative flex justify-center xl:justify-start  w-full  xl:w-[50%] h-[80vw] md:h-[60vw] lg:h-[40vw] xl:h-[64dvh] xl:px-5 xl:px-10">
-        <NavLink
-          to={liveSite}
-          target="_blank"
-          className="relative flex overflow-hidden bg-background-primary justify-start w-full rounded-[1rem]"
-        >
+    <section
+      className={`${orientation} flex flex-col xl:flex-row items-center xl:items-stretch w-full gap-10 xl:gap-16 py-20 xl:py-28`}
+    >
+      {/* Image Section */}
+      <div className="relative w-full xl:w-1/2 overflow-hidden rounded-2xl group shadow-2xl">
+        <NavLink to={liveSite} target="_blank" className="block w-full h-full">
           <img
             src={imgLink}
-            alt="project preview"
-            className="absolute object-top-left w-[100%] h-[100%] object-cover group-hover:scale-[1.04] transition-scale duration-300 ease-out"
+            alt={`${title} preview`}
+            className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
         </NavLink>
       </div>
-      <div className="flex gap-8 xl:gap-3 flex-col w-full xl:justify-start justify-center xl:w-[50%] justify-center lg:pl-20 mt-10">
-        <h1 className="fontheading text-[2rem]  leading-10  lg:text-[3rem] text-primary-text">
+
+      {/* Text Section (Glass Card) */}
+      <div className="relative portrait:w-full flex flex-col justify-center w-[90%] xl:w-1/2  text-center xl:text-left px-6 py-10 rounded-3xl border border-white/20 bg-white/10 dark:bg-white/5 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+        {/* Subtle glass highlight */}
+        <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/30 via-transparent to-transparent opacity-[0.15] pointer-events-none" />
+
+        <h2 className="fontheading text-3xl md:text-4xl lg:text-[2.8rem] text-primary-text drop-shadow-md mb-6 tracking-tight">
           {title}
-        </h1>
-        <div className="flex flex-col xl:px-10 lg:py-5 pl-10">
-          {desc.map((item) => (
-            <p className=" fontBody text-[0.7rem] md:text-[1.2rem] lg:text-[1rem] xl:text-[1rem] text-primary-text/80 my-2 lg:m-2">
+        </h2>
+
+        <ul className="flex flex-col gap-3 md:gap-4 text-primary-text/90 fontBody text-left text-[0.9rem] md:text-[1.2rem] xl:text-[1rem] leading-relaxed max-w-[90%] mx-auto xl:mx-0">
+          {desc.map((item, i) => (
+            <li
+              key={i}
+              className="relative pl-4 before:content-[''] before:absolute before:left-0 before:top-2 before:w-1 before:h-1 before:rounded-full before:bg-primary-text/50"
+            >
               {item}
-            </p>
+            </li>
           ))}
-        </div>
-        <div className="flex xl:pl-10 justify-center xl:justify-start  w-full  mt-5 xl:mt-10">
+        </ul>
+
+        <div className="mt-10 flex justify-center xl:justify-start">
           <CtaButtonMain label="Visit Site" siteLink={liveSite} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -4,7 +4,7 @@ import { useTheme } from "../contexts/themeContext";
 const Footer = () => {
   const { isDarkMode } = useTheme();
   return (
-    <footer className="flex flex-col gap-6 lg:gap-10 pb-5 items-center justify-center bg-background-secondary w-full h-[15rem]">
+    <footer className="flex flex-col border-t border-white/30 gap-6 lg:gap-10 pb-5 items-center justify-center bg-background-secondary w-full h-[15rem]">
       <div className="flex w-full lg:w-[50%] p-8 gap-10 lg:gap-30 justify-center pt-10">
         <NavLink
           to={"https://github.com/arcadyrajeev"}

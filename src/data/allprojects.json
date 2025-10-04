@@ -1,5 +1,19 @@
 [
   {
+    "title": "AcademyX - E-learning",
+    "imgLink": "/images/academyX.jpeg",
+    "desc": [
+      "Full-stack e-learning platform built for the Indian education ecosystem",
+      "Advanced category and sorting using Zustand for state management",
+      "40% faster media performance through Supabase optimization",
+      "Real-time progress and analytics with Apache Kafka",
+      "Hybrid authentication with JWT and Google/GitHub OAuth",
+      "Delivered a 23% improvement in learner engagement through clean UI and fluid animations"
+    ],
+    "liveSite": "https://academy-x-seven.vercel.app/",
+    "orientation": "xl:flex-row"
+  },
+  {
     "title": "Lunaria Photography",
     "imgLink": "/images/Lunaria.jpeg",
     "desc": [
@@ -11,7 +25,18 @@
     "liveSite": "https://lunaria.arcadydesign.com/",
     "orientation": "xl:flex-row-reverse"
   },
-
+  {
+    "title": "Close-X-Pay",
+    "imgLink": "/images/closeXpay.png",
+    "desc": [
+      "Fintech website focused on modern payments and cross-border UPI solutions",
+      "Smart UX flow designed for higher conversion rates",
+      "Fully responsive, mobile-friendly layouts",
+      "Clean, professional interface with refined micro-animations for trust and clarity"
+    ],
+    "liveSite": "https://closexpay.in/",
+    "orientation": "xl:flex-row"
+  },
   {
     "title": "iLogiBOT Fashion",
     "imgLink": "/images/ilogibot.png",
