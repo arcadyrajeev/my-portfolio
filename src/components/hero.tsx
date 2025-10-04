@@ -115,7 +115,7 @@ const Hero = () => {
                       border border-primary-text/30 rounded-[2rem] pt-30 px-4 py-30 md:py-10 xl:px-20"
       >
         <div className="absolute md:left-[5%] lg:left-[8%] md:left-[10%] top-[5%] md:top-[10%]">
-          <CtaButtonSecond label="view a Case Study" siteLink="/" />
+          <CtaButtonSecond label="view a Case Study" siteLink="/projects" />
         </div>
         <h1 className="fontheading text-[3.6rem] lg:text-[6.6rem] text-primary-text text-center md:text-right">
           About Me
