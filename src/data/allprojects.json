@@ -5,9 +5,9 @@
     "desc": [
       "Full-stack e-learning platform built for the Indian education ecosystem",
       "Advanced category and sorting using Zustand for state management",
-      "40% faster media performance through Supabase optimization",
+      "40% faster media performance through Cloudinary optimization",
       "Real-time progress and analytics with Apache Kafka",
-      "Hybrid authentication with JWT and Google/GitHub OAuth",
+      "Secure and protected Authentication with JWT ",
       "Delivered a 23% improvement in learner engagement through clean UI and fluid animations"
     ],
     "liveSite": "https://academy-x-seven.vercel.app/",
