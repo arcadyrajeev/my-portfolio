@@ -190,7 +190,6 @@ html {
 }
 
 .buttonShine {
-  display: flex;
   position: absolute;
   border-radius: 6vw;
   width: 15rem;

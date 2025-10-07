@@ -13,7 +13,7 @@ const CtaButtonMain: React.FC<CtaProps> = ({ label, siteLink }) => {
       target="blank"
       className="group relative flex items-center justify-center bg-accent w-[38vw] md:w-64 h-[10vw] md:h-16 rounded-[100vw] overflow-hidden"
     >
-      <div className="buttonShine group-hover:rounded-[10vw] group-hover:scale-[1.2]"></div>
+      <div className="hidden lg:block buttonShine group-hover:rounded-[10vw] group-hover:scale-[1.2]"></div>
       <h1 className="fontCta tracking-wider text-secondary-text z-[2] text-[4vw] md:text-[2vw] group-hover:translate-x-3 transition-all duration-300 ease-in-out">
         {label}
       </h1>

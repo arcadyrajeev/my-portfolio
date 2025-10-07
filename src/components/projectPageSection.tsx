@@ -10,7 +10,7 @@ const ProjectPageSection = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.8,
+        duration: 0.4,
         ease: "easeOut",
         when: "beforeChildren",
         staggerChildren: 0.25,
@@ -24,7 +24,7 @@ const ProjectPageSection = () => {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 0.7, ease: "easeOut" },
+      transition: { duration: 0.4, ease: "easeOut" },
     },
   };
 

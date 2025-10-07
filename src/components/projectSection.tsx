@@ -25,7 +25,7 @@ const ProjectSection = () => {
             A curated selection of my most passionately crafted projects{" "}
           </p>
         </div>
-        <div className="flex items-center flex-col gap-30 md:gap-40 lg:gap-50 z-2">
+        <div className="flex items-center flex-col gap-1 md:gap-10 lg:gap-20 z-2">
           {projectData.map((project) => (
             <ProjectCard
               imgLink={project.imgLink}
