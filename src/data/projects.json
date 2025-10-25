@@ -1,14 +1,15 @@
 [
   {
-    "title": "Lunaria Photography",
-    "imgLink": "/images/Lunaria.jpeg",
+    "title": "RupeeFlow — Website for Fintech UPI Platform",
+    "imgLink": "/images/rupeeflow.webp",
     "desc": [
-      "Minimalist portfolio website for a professional photography service",
-      "Designed with a mobile-first approach and responsive image scaling",
-      "Optimized imagery for rapid loading without quality loss",
-      "Smooth page transitions and subtle animations to enhance storytelling"
+      "A modern fintech web platform enabling seamless UPI transactions across borders",
+      "Built with React and Next.js featuring Framer Motion animations for smooth, dynamic UI transitions",
+      "Clean, consistent branding and layout ensuring clarity, trust, and user comfort",
+      "Optimized assets and responsive design delivering fast performance across all devices",
+      "Integrated modular components for scalable growth and intuitive navigation"
     ],
-    "liveSite": "https://lunaria.arcadydesign.com/",
+    "liveSite": "https://rupeeflow.arcadydesign.com/",
     "orientation": "xl:flex-row-reverse"
   },
 
