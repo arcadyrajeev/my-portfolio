@@ -79,7 +79,7 @@ const ProjectPageSection = () => {
         {/* Projects Section */}
         <motion.div
           variants={containerVariants}
-          className="flex items-center flex-col gap-30 md:gap-40 lg:gap-50 z-2"
+          className="flex items-center flex-col gap-0 md:gap-10 lg:gap-20 z-2"
         >
           {projectData.map((project, index) => (
             <motion.div

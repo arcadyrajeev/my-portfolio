@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <section
-      className={`${orientation} flex flex-col xl:flex-row items-center xl:items-stretch w-full gap-10 xl:gap-16 py-20 xl:py-28`}
+      className={`${orientation} flex flex-col xl:flex-row items-center xl:items-stretch w-full gap-5 xl:gap-10 py-20 xl:py-28`}
     >
       {/* Image Section */}
       <div className="relative w-full xl:w-1/2 overflow-hidden rounded-2xl group shadow-2xl">
@@ -34,7 +34,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       {/* Text Section (Glass Card) */}
-      <div className="relative portrait:w-full flex flex-col justify-center w-[90%] xl:w-1/2  text-center xl:text-left px-6 py-10 rounded-3xl border border-white/20 bg-white/10 dark:bg-white/5 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+      <div className="relative portrait:w-full flex flex-col justify-center w-[90%] xl:w-1/2  text-center xl:text-left px-4 py-8 lg:px-8 lg:py-10 rounded-3xl border border-white/20 bg-white/10 dark:bg-white/5 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
         {/* Subtle glass highlight */}
         <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-white/30 via-transparent to-transparent opacity-[0.15] pointer-events-none" />
 
@@ -42,7 +42,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           {title}
         </h2>
 
-        <ul className="flex flex-col gap-3 md:gap-4 text-primary-text/90 fontBody text-left text-[0.9rem] md:text-[1.2rem] xl:text-[1rem] leading-relaxed max-w-[90%] mx-auto xl:mx-0">
+        <ul className="flex flex-col gap-3 md:gap-4 text-primary-text/90 fontBody text-left text-[0.6rem] md:text-[1rem] xl:text-[0.9rem] leading-relaxed max-w-[90%] mx-auto xl:mx-0 px-0 lg:px-6 mt-4">
           {desc.map((item, i) => (
             <li
               key={i}
