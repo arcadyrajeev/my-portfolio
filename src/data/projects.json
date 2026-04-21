@@ -9,22 +9,24 @@
       "Optimized assets and responsive design delivering fast performance across all devices",
       "Integrated modular components for scalable growth and intuitive navigation"
     ],
-    "liveSite": "https://rupeeflow.arcadydesign.com/",
-    "orientation": "xl:flex-row-reverse"
+    "liveSite": "https://rupeeflow.co/",
+    "orientation": "xl:flex-row"
   },
 
   {
-    "title": "iLogiBOT Fashion",
-    "imgLink": "/images/ilogibot.png",
+    "title": "Adharsh Residency — Conversion-Focused Hospitality Website",
+    "imgLink": "/images/adarsh-hero.webp",
     "desc": [
-      "E-commerce platform for a contemporary fashion brand",
-      "Immersive, bold design aesthetic to highlight modern apparel",
-      "Image optimization pipeline for high-resolution product displays",
-      "Mobile-first responsive layout with a focus on visual storytelling",
-      "Smooth transitions and intuitive navigation for a seamless shopping experience"
+      "Designed and developed a premium hospitality website focused on driving direct bookings and inquiries",
+      "Structured around high-intent user flows, reducing friction from discovery to WhatsApp booking",
+      "Custom booking interaction with date selection, guest control, and instant CTA validation",
+      "Clean, modern UI system with consistent spacing, typography, and soft neutral color palette",
+      "Mobile-first responsive design optimized for real user behavior and thumb interaction",
+      "Integrated WhatsApp-based booking flow to eliminate complex backend dependencies and improve conversion speed",
+      "Performance-optimized assets and lightweight components ensuring fast load times across devices"
     ],
-    "liveSite": "https://demo-ecom-six.vercel.app/",
-    "orientation": "xl:flex-row-reverse"
+    "liveSite": "https://www.adharshresidency.com/",
+    "orientation": "xl:flex-row-reversed"
   },
   {
     "title": "CartBliss - Clothing E-commerce",

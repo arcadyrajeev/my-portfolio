@@ -50,14 +50,14 @@ const Navbar = () => {
       {/* Nav Bubble */}
       <div
         onClick={handleToggleNav}
-        className={`absolute top-full left-[2%] md:relative flex-shrink-0 flex  md:flex-row items-center justify-center overflow-hidden cursor-pointer px-10
+        className={`absolute top-full left-[2%] md:relative flex-shrink-0 flex  md:flex-row items-center justify-center overflow-hidden cursor-pointer px-6
         bg-primary-text fontbody text-secondary-text rounded-[100vw]
         transition-all duration-300 ease-in-out
-        md:hover:w-[36vw]
+        md:hover:w-[30vw]
         ${
           isNavOpen
-            ? "w-[72vw] md:w-[48vw] "
-            : "w-[24vw] md:w-[16vw] xl:w-[12vw] "
+            ? "w-[72vw] md:w-[30vw] "
+            : "w-[24vw] md:w-[16vw] xl:w-[10vw] "
         } 
         `}
       >
@@ -69,7 +69,7 @@ const Navbar = () => {
               key={item.name}
               to={isActive ? "#" : item.path} // disable click on current active
               onClick={isActive ? undefined : handleLinkClick}
-              className={`flex flex-shrink-0 transition-colors justify-center items-center text-[1.2rem] lg:text-[2rem] rounded-full w-[24vw] md:w-[16vw] xl:w-[12vw] duration-200 p-1 md:px-3 ${
+              className={`flex flex-shrink-0 transition-colors justify-center items-center text-md lg:text-xl rounded-full w-[24vw] md:w-[16vw] xl:w-[10vw] duration-200 p-1 md:px-3 ${
                 isActive
                   ? "text-secondary-text/70 pointer-events-none select-none"
                   : "text-secondary-text/90 hover:text-secondary-text"
