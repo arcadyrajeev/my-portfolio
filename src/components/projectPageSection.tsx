@@ -70,9 +70,9 @@ const ProjectPageSection = () => {
           <h1 className="flex justify-center md:justify-start text-[2rem] w-full md:w-[70%] lg:text-[4rem] xl:text-[6rem] h-fit text-primary-text leading-tight">
             My Works
           </h1>
-          <p className="flex h-fit w-[80%] lg:w-[30%] xl:w-[20%] m-10 lg:mt-16 text-center md:text-left fontbody text-[0.8rem] md:text-[1rem] xl:text-[1vw] tracking-wider text-primary-text/90">
-            A showcase of products that merge strategy, usability, and
-            technology — built to perform, scale, and inspire.
+          <p className="flex h-fit w-[80%] lg:w-[30%] xl:w-[36%] m-10 lg:mt-16 text-center md:text-justify fontbody  text-[0.8rem] md:text-[1rem] xl:text-[1vw] tracking-wider text-primary-text/90">
+            A SHOWCASE OF PRODUCTS THAT MERGE STRATEGY, USABILITY AND TECHNOLOGY
+            - BUILT TO PERFORM, SCALE AND INSPIRE
           </p>
         </motion.div>
 

@@ -10,7 +10,7 @@
       "Integrated modular components for scalable growth and intuitive navigation"
     ],
     "liveSite": "https://rupeeflow.co/",
-    "orientation": "xl:flex-row"
+    "orientation": "xl:flex-row-reverse"
   },
 
   {
@@ -26,7 +26,7 @@
       "Performance-optimized assets and lightweight components ensuring fast load times across devices"
     ],
     "liveSite": "https://www.adharshresidency.com/",
-    "orientation": "xl:flex-row-reversed"
+    "orientation": "xl:flex-row"
   },
   {
     "title": "CartBliss - Clothing E-commerce",
