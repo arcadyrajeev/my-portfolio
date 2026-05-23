@@ -38,7 +38,7 @@ const AboutSection = () => {
       >
         {[
           {
-            value: "2+",
+            value: "3+",
             label: "Years of Web Design & Development",
           },
           {

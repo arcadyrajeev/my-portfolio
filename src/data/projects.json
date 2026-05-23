@@ -1,6 +1,6 @@
 [
   {
-    "title": "RupeeFlow — Website for Fintech UPI Platform",
+    "title": "RupeeFlow | Website for Fintech UPI Platform",
     "imgLink": "/images/rupeeflow.webp",
     "desc": [
       "A modern fintech web platform enabling seamless UPI transactions across borders",
@@ -14,44 +14,30 @@
   },
 
   {
-    "title": "Adharsh Residency — Conversion-Focused Hospitality Website",
+    "title": "Realestify | Luxury Real Estate Marketplace",
+    "imgLink": "/images/realestify-cover.webp",
+    "desc": [
+      "A premium real estate platform designed to simplify luxury property discovery and lead generation",
+      "Structured high-trust user experience with refined layouts, premium typography, and strong visual hierarchy",
+      "Advanced property browsing system with responsive listings, filtering, and immersive property presentation",
+      "Built with scalable modern architecture ensuring smooth performance across desktop and mobile devices",
+      "Focused on conversion-driven design patterns to improve credibility, engagement, and inquiry flow"
+    ],
+    "liveSite": "https://realestify.in/",
+    "orientation": "xl:flex-row"
+  },
+
+  {
+    "title": "Adharsh Residency | Conversion-Focused Hospitality Website",
     "imgLink": "/images/adarsh-hero.webp",
     "desc": [
       "Designed and developed a premium hospitality website focused on driving direct bookings and inquiries",
-      "Structured around high-intent user flows, reducing friction from discovery to WhatsApp booking",
       "Custom booking interaction with date selection, guest control, and instant CTA validation",
-      "Clean, modern UI system with consistent spacing, typography, and soft neutral color palette",
       "Mobile-first responsive design optimized for real user behavior and thumb interaction",
       "Integrated WhatsApp-based booking flow to eliminate complex backend dependencies and improve conversion speed",
       "Performance-optimized assets and lightweight components ensuring fast load times across devices"
     ],
     "liveSite": "https://www.adharshresidency.com/",
-    "orientation": "xl:flex-row"
-  },
-  {
-    "title": "CartBliss - Clothing E-commerce",
-    "imgLink": "/images/cartbliss.png",
-    "desc": [
-      "Luxury-inspired clothing e-commerce platform for timeless fashion essentials",
-      "Elegant, editorial-style layout showcasing wardrobe collections and lifestyle imagery",
-      "Dynamic product grid with high-resolution photography and optimized load times",
-      "Built with modern design principles for effortless navigation and conversion flow",
-      "Enhanced visual hierarchy and typography for a refined shopping experience"
-    ],
-    "liveSite": "https://cartbliss.arcadydesign.com/",
-    "orientation": "xl:flex-row"
-  },
-  {
-    "title": "RFTech - POS & Payment Devices",
-    "imgLink": "/images/rftech.png",
-    "desc": [
-      "Enterprise-grade e-commerce website for POS and payment device solutions",
-      "Showcases product categories like barcode scanners, terminals, and card machines",
-      "Professional layout focused on clarity and trust for B2B customers",
-      "Dynamic metrics section and featured blog integration for content marketing",
-      "Enhanced with responsive UI, category filters, and strong brand visual identity"
-    ],
-    "liveSite": "https://rftech.arcadydesign.com/",
     "orientation": "xl:flex-row-reverse"
   }
 ]

@@ -115,7 +115,10 @@ const Hero = () => {
                       border border-primary-text/30 rounded-[2rem] pt-30 px-4 py-30 md:py-10 xl:px-20"
       >
         <div className="absolute md:left-[5%] lg:left-[8%] md:left-[10%] top-[5%] md:top-[10%]">
-          <CtaButtonSecond label="view a Case Study" siteLink="/projects" />
+          <CtaButtonSecond
+            label="view a Case Study"
+            siteLink="https://www.arcadydesign.com/case-studies"
+          />
         </div>
         <h1 className="fontheading text-[3.6rem] lg:text-[6.6rem] text-primary-text text-center md:text-right">
           About Me
@@ -123,7 +126,7 @@ const Hero = () => {
         <div className="p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-15 w-full py-5 h-full">
           <div className="flex-col px-12">
             <p className="fontheading text-[3rem] md:text-[6rem] font-bold text-primary-text/70">
-              2+
+              3+
             </p>
             <p className="text-primary-text text-[0.8rem] fontbody md:pr-10">
               years of Web design and development experience
