@@ -78,6 +78,20 @@
     "liveSite": "https://academy-x-seven.vercel.app/",
     "orientation": "xl:flex-row"
   },
+
+  {
+    "title": "RFTech - POS & Payment Devices",
+    "imgLink": "/images/rf-tech-home.webp",
+    "desc": [
+      "Enterprise-grade e-commerce website for POS and payment device solutions",
+      "Showcases product categories like barcode scanners, terminals, and card machines",
+      "Professional layout focused on clarity and trust for B2B customers",
+      "Dynamic metrics section and featured blog integration for content marketing",
+      "Enhanced with responsive UI, category filters, and strong brand visual identity"
+    ],
+    "liveSite": "https://rftech.arcadydesign.com/",
+    "orientation": "xl:flex-row-reverse"
+  },
   {
     "title": "iLogiBOT Fashion",
     "imgLink": "/images/ilogibot.png",
@@ -89,7 +103,7 @@
       "Smooth transitions and intuitive navigation for a seamless shopping experience"
     ],
     "liveSite": "https://demo-ecom-six.vercel.app/",
-    "orientation": "xl:flex-row-reverse"
+    "orientation": "xl:flex-row"
   },
   {
     "title": "CartBliss - Clothing E-commerce",
@@ -102,19 +116,6 @@
       "Enhanced visual hierarchy and typography for a refined shopping experience"
     ],
     "liveSite": "https://cartbliss.arcadydesign.com/",
-    "orientation": "xl:flex-row"
-  },
-  {
-    "title": "RFTech - POS & Payment Devices",
-    "imgLink": "/images/rftech.png",
-    "desc": [
-      "Enterprise-grade e-commerce website for POS and payment device solutions",
-      "Showcases product categories like barcode scanners, terminals, and card machines",
-      "Professional layout focused on clarity and trust for B2B customers",
-      "Dynamic metrics section and featured blog integration for content marketing",
-      "Enhanced with responsive UI, category filters, and strong brand visual identity"
-    ],
-    "liveSite": "https://rftech.arcadydesign.com/",
     "orientation": "xl:flex-row-reverse"
   }
 ]

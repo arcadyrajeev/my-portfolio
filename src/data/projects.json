@@ -1,7 +1,7 @@
 [
   {
     "title": "RupeeFlow | Website for Fintech UPI Platform",
-    "imgLink": "/images/rupeeflow.webp",
+    "imgLink": "/images/rupeeflow-home.webp",
     "desc": [
       "A modern fintech web platform enabling seamless UPI transactions across borders",
       "Built with React and Next.js featuring Framer Motion animations for smooth, dynamic UI transitions",
