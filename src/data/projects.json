@@ -28,6 +28,19 @@
   },
 
   {
+    "title": "SkillGuide | Creative Learning Platform",
+    "imgLink": "/images/skill-guide.webp",
+    "desc": [
+      "Modern creative learning platform focused on guided skill development through structured learning paths",
+      "Bold visual identity combining vibrant gradients, dark UI aesthetics, and clean editorial-inspired layouts",
+      "Interactive course discovery experience with premium instructor showcases and category-driven exploration",
+      "Designed with scalable component architecture and responsive performance across all screen sizes",
+      "Built to improve learner engagement through strong hierarchy, intuitive navigation, and conversion-focused UX"
+    ],
+    "liveSite": "https://project-skillguide.vercel.app/",
+    "orientation": "xl:flex-row-reverse"
+  },
+  {
     "title": "Adharsh Residency | Conversion-Focused Hospitality Website",
     "imgLink": "/images/adarsh-hero.webp",
     "desc": [
@@ -38,6 +51,6 @@
       "Performance-optimized assets and lightweight components ensuring fast load times across devices"
     ],
     "liveSite": "https://www.adharshresidency.com/",
-    "orientation": "xl:flex-row-reverse"
+    "orientation": "xl:flex-row"
   }
 ]

@@ -1,5 +1,18 @@
 [
   {
+    "title": "Realestify | Luxury Real Estate Marketplace",
+    "imgLink": "/images/realestify-cover.webp",
+    "desc": [
+      "A premium real estate platform designed to simplify luxury property discovery and lead generation",
+      "Structured high-trust user experience with refined layouts, premium typography, and strong visual hierarchy",
+      "Advanced property browsing system with responsive listings, filtering, and immersive property presentation",
+      "Built with scalable modern architecture ensuring smooth performance across desktop and mobile devices",
+      "Focused on conversion-driven design patterns to improve credibility, engagement, and inquiry flow"
+    ],
+    "liveSite": "https://realestify.in/",
+    "orientation": "xl:flex-row"
+  },
+  {
     "title": "RupeeFlow | Website for Fintech UPI Platform",
     "imgLink": "/images/rupeeflow-home.webp",
     "desc": [
@@ -14,18 +27,19 @@
   },
 
   {
-    "title": "Realestify | Luxury Real Estate Marketplace",
-    "imgLink": "/images/realestify-cover.webp",
+    "title": "SkillGuide | Creative Learning Platform",
+    "imgLink": "/images/skill-guide.webp",
     "desc": [
-      "A premium real estate platform designed to simplify luxury property discovery and lead generation",
-      "Structured high-trust user experience with refined layouts, premium typography, and strong visual hierarchy",
-      "Advanced property browsing system with responsive listings, filtering, and immersive property presentation",
-      "Built with scalable modern architecture ensuring smooth performance across desktop and mobile devices",
-      "Focused on conversion-driven design patterns to improve credibility, engagement, and inquiry flow"
+      "Modern creative learning platform focused on guided skill development through structured learning paths",
+      "Bold visual identity combining vibrant gradients, dark UI aesthetics, and clean editorial-inspired layouts",
+      "Interactive course discovery experience with premium instructor showcases and category-driven exploration",
+      "Designed with scalable component architecture and responsive performance across all screen sizes",
+      "Built to improve learner engagement through strong hierarchy, intuitive navigation, and conversion-focused UX"
     ],
-    "liveSite": "https://realestify.in/",
+    "liveSite": "https://project-skillguide.vercel.app/",
     "orientation": "xl:flex-row"
   },
+
   {
     "title": "Adharsh Residency | Conversion-Focused Hospitality Website",
     "imgLink": "/images/adarsh-hero.webp",
