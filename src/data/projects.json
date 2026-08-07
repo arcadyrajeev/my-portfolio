@@ -1,5 +1,18 @@
 [
   {
+    "title": "Lama Healthcare | Healthcare Operations Platform",
+    "imgLink": "/images/lama-hc-cover.webp",
+    "desc": [
+      "A premium healthcare operations platform helping private practices streamline growth, compliance, and day to day management",
+      "Designed around trust, clarity, and premium storytelling with a refined editorial layout and modern visual hierarchy",
+      "End to end operational ecosystem covering medical billing, credentialing, compliance, practice operations, and new practice launches",
+      "Built with scalable modern architecture, responsive interfaces, and performance focused user experience across every device",
+      "Focused on converting healthcare practice owners through authority driven messaging, educational content, and high trust conversion patterns"
+    ],
+    "liveSite": "https://lamahc.com/",
+    "orientation": "xl:flex-row"
+  },
+  {
     "title": "Realestify | Luxury Real Estate Marketplace",
     "imgLink": "/images/realestify-cover.webp",
     "desc": [
